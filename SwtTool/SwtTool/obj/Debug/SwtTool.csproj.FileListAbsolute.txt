@@ -9,3 +9,12 @@ E:\diskF\swt20150426\SwtTool\SwtTool\obj\Debug\SwtTool.pdb
 E:\diskF\swt20150426\SwtTool\SwtTool\bin\Debug\c1.c1zip.dll
 E:\diskF\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.exe
 E:\diskF\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.pdb
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.exe
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.pdb
+F:\myprograms\swtserver\SwtTool\SwtTool\bin\Debug\SwtTool.exe
+F:\myprograms\swtserver\SwtTool\SwtTool\bin\Debug\SwtTool.pdb
+F:\myprograms\swtserver\SwtTool\SwtTool\bin\Debug\c1.c1zip.dll
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.csprojResolveAssemblyReference.cache
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.Form1.resources
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.Properties.Resources.resources
+F:\myprograms\swtserver\SwtTool\SwtTool\obj\Debug\SwtTool.csproj.GenerateResource.Cache

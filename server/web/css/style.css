@@ -30,7 +30,7 @@
 /*-- //Reset-Code --*/
 
 body {
-   background-color:#07cbc9;
+   background-color:#e9e9e9;
 	font-family: 'Ubuntu', sans-serif;
 
 }
@@ -39,7 +39,7 @@ h1{
 	font-size:60px;
 	padding-top:80px;
 	font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
+    color: #5f5151;
 }
 .main{
 	width:40%;
@@ -47,12 +47,12 @@ h1{
 	background-color:white;
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(146, 143, 143, 0.75);
 }
 h2{
 	padding:20px;
 	background-color:#f2f2f3;
-	color:black;
+	color:#676565;
 	padding-left:55px;
 	font-size:35px;
 }
@@ -96,7 +96,7 @@ input[type="submit"] {
 	letter-spacing: 2px;
 	font-weight: 600;
 	color: #fff;
-	background-color: #fc3955;
+	background-color: #53b8e8;
 	border-radius:3px;
 	transition: 0.5s all;
 	cursor:pointer;
@@ -106,7 +106,7 @@ input[type="submit"] {
 	-ms-transition: 0.5s all;
 }
 input[type="submit"]:hover {
-	background-color:#07cbc9;
+	background-color:#53b8e8;
 }
 input[type="button"] {
 	margin: 20px 0px 20px 0px;

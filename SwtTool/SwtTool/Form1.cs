@@ -20,7 +20,7 @@ namespace SwtTool
 
         private void encrpt_btn_Click(object sender, EventArgs e)
         {
-            this.encript_txt.Text = encrpt(this.encript_txt.Text,this.encrptkey.Text);
+            this.encript_txt.Text = encrpt(this.encript_txt.Text, this.encrptkey.Text);
         }
 
         /// <summary>
@@ -54,6 +54,7 @@ namespace SwtTool
                 return "";
             }
         }
+
         public static string encrpt(string string_0, string string_1)
         {
             try
@@ -79,24 +80,23 @@ namespace SwtTool
                 return "";
             }
         }
+
         private void dencrpt_btn_Click(object sender, EventArgs e)
         {
-            this.decrpt_txt.Text = decrpt(this.decrpt_txt.Text,this.decrptKey.Text);
+            this.decrpt_txt.Text = decrpt(this.decrpt_txt.Text, this.decrptKey.Text);
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-
         }
 
-      
         private void uncompress_choice_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = "c:\\";//注意这里写路径时要用c:\\而不是c:\
             openFileDialog.Filter = "文本文件|*.*|C#文件|*.cs|所有文件|*.*";
             openFileDialog.RestoreDirectory = true;
-            openFileDialog.InitialDirectory=Environment.CurrentDirectory;
+            openFileDialog.InitialDirectory = Environment.CurrentDirectory;
             openFileDialog.FilterIndex = 1;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -104,6 +104,7 @@ namespace SwtTool
                 this.uncompress_txt.Text = file;
             }
         }
+
         public static bool uncompress(Stream stream_0, string string_0)
         {
             bool flag = true;
@@ -127,6 +128,7 @@ namespace SwtTool
             }
             return flag;
         }
+
         public static void uncompress_write(Stream stream_0, Stream stream_1)
         {
             int num;
@@ -141,6 +143,7 @@ namespace SwtTool
             }
             stream_0.Flush();
         }
+
         private void uncompress_btn_Click(object sender, EventArgs e)
         {
             MemoryStream ms = new MemoryStream();
@@ -157,12 +160,13 @@ namespace SwtTool
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 MemoryStream stream = new MemoryStream();
-                StreamWriter writer = new StreamWriter( stream );  
-                writer.Write(this.result.Text);  
+                StreamWriter writer = new StreamWriter(stream);
+                writer.Write(this.result.Text);
                 writer.Flush();
                 saveCompress(saveFileDialog1.FileName, stream);
             }
         }
+
         public static bool saveCompress(string string_0, Stream stream_0)
         {
             bool flag = true;
@@ -173,7 +177,7 @@ namespace SwtTool
                 C1ZStreamWriter writer = new C1ZStreamWriter(stream);
                 compressWrite(writer, stream_0);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 flag = false;
             }
@@ -186,6 +190,7 @@ namespace SwtTool
             }
             return flag;
         }
+
         public static void compressWrite(Stream stream_0, Stream stream_1)
         {
             int num;
@@ -203,12 +208,10 @@ namespace SwtTool
 
         private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
         {
-
         }
 
         private void compress_btn_Click(object sender, EventArgs e)
         {
-            
             saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             saveFileDialog1.RestoreDirectory = true;
             saveFileDialog1.InitialDirectory = Environment.CurrentDirectory;
@@ -232,6 +235,10 @@ namespace SwtTool
                 string file = openFileDialog.FileName;
                 this.compress_txt.Text = file;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
         }
     }
 }
