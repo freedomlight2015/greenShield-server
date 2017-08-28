@@ -1,0 +1,15 @@
+F:\swt\LRServer-test\LRServer-test\obj\Debug\LRServer-test.csprojResolveAssemblyReference.cache
+F:\swt\LRServer-test\LRServer-test\bin\Debug\LRServer-test.dll
+F:\swt\LRServer-test\LRServer-test\bin\Debug\LRServer-test.pdb
+F:\swt\LRServer-test\LRServer-test\obj\Debug\LRServer-test.dll
+F:\swt\LRServer-test\LRServer-test\obj\Debug\LRServer-test.pdb
+F:\swt\LRServer\LRServer-test\LRServer-test\bin\Debug\LRServer-test.dll
+F:\swt\LRServer\LRServer-test\LRServer-test\bin\Debug\LRServer-test.pdb
+F:\swt\LRServer\LRServer-test\LRServer-test\obj\Debug\LRServer-test.csprojResolveAssemblyReference.cache
+F:\swt\LRServer\LRServer-test\LRServer-test\obj\Debug\LRServer-test.dll
+F:\swt\LRServer\LRServer-test\LRServer-test\obj\Debug\LRServer-test.pdb
+E:\diskF\swtserver\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.dll
+E:\diskF\swtserver\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.pdb
+E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.csprojResolveAssemblyReference.cache
+E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.dll
+E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.pdb

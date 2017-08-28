@@ -1,0 +1,1968 @@
+﻿
+//  Microsoft (R) .NET Framework IL Disassembler.  Version 3.5.30729.1
+
+
+
+
+// Metadata version: v2.0.50727
+.assembly extern mscorlib
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly extern System.Data
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly extern System.Web
+{
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+.assembly extern System
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly 'LRServer-test'
+{
+  .custom instance void [mscorlib]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 0D 4C 52 53 65 72 76 65 72 2D 74 65 73 74   // ...LRServer-test
+                                                                                              00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyDescriptionAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyConfigurationAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 09 4D 69 63 72 6F 73 6F 66 74 00 00 )       // ...Microsoft..
+  .custom instance void [mscorlib]System.Reflection.AssemblyProductAttribute::.ctor(string) = ( 01 00 0D 4C 52 53 65 72 76 65 72 2D 74 65 73 74   // ...LRServer-test
+                                                                                                00 00 ) 
+  .custom instance void [mscorlib]System.Reflection.AssemblyCopyrightAttribute::.ctor(string) = ( 01 00 1B 43 6F 70 79 72 69 67 68 74 20 C2 A9 20   // ...Copyright .. 
+                                                                                                  4D 69 63 72 6F 73 6F 66 74 20 32 30 31 35 00 00 ) // Microsoft 2015..
+  .custom instance void [mscorlib]System.Reflection.AssemblyTrademarkAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute::.ctor(bool) = ( 01 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.InteropServices.GuidAttribute::.ctor(string) = ( 01 00 24 30 37 34 38 39 33 37 37 2D 39 39 61 30   // ..$07489377-99a0
+                                                                                                  2D 34 31 66 36 2D 39 61 63 32 2D 37 33 37 61 62   // -41f6-9ac2-737ab
+                                                                                                  34 35 36 39 30 34 63 00 00 )                      // 456904c..
+  .custom instance void [mscorlib]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 )             // ...1.0.0.0..
+
+  // --- 下列自定义属性会自动添加，不要取消注释 -------
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 07 01 00 00 00 00 ) 
+
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78   // ....T..WrapNonEx
+                                                                                                             63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
+  .hash algorithm 0x00008004
+  .ver 1:0:0:0
+}
+.module 'LRServer-test.dll'
+// MVID: {1487E482-FF6E-4E59-B8AB-B59A51652D74}
+.imagebase 0x10000000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003       // WINDOWS_CUI
+.corflags 0x00000001    //  ILONLY
+// Image base: 0x021F0000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class public auto ansi beforefieldinit cccc
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static string 
+          a(string A_0,
+            string A_1) cil managed
+  {
+    // 代码大小       11 (0xb)
+    .maxstack  1
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldstr      ""
+    IL_0006:  stloc.0
+    IL_0007:  br.s       IL_0009
+
+    IL_0009:  ldloc.0
+    IL_000a:  ret
+  } // end of method cccc::a
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method cccc::.ctor
+
+} // end of class cccc
+
+.class public auto ansi beforefieldinit a3
+       extends [mscorlib]System.Object
+{
+  .field public static string q
+  .field public static bool j
+  .field public static int32 Global_Guard_verifyUsr_ON
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method a3::.ctor
+
+  .method private hidebysig specialname rtspecialname static 
+          void  .cctor() cil managed
+  {
+    // 代码大小       11 (0xb)
+    .maxstack  8
+    IL_0000:  ldstr      "D:\\LR_Data\\"
+    IL_0005:  stsfld     string a3::q
+    IL_000a:  ret
+  } // end of method a3::.cctor
+
+} // end of class a3
+
+.class public auto ansi beforefieldinit a8
+       extends [mscorlib]System.Object
+{
+  .field public static string a
+  .field public static string b
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method a8::.ctor
+
+  .method private hidebysig specialname rtspecialname static 
+          void  .cctor() cil managed
+  {
+    // 代码大小       21 (0x15)
+    .maxstack  8
+    IL_0000:  ldstr      ""
+    IL_0005:  stsfld     string a8::a
+    IL_000a:  ldstr      ""
+    IL_000f:  stsfld     string a8::b
+    IL_0014:  ret
+  } // end of method a8::.cctor
+
+} // end of class a8
+
+.class public auto ansi beforefieldinit aq
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static bool  a(string A_0,
+                                          class bn A_1,
+                                          string A_2,
+                                          string A_3) cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  1
+    .locals init ([0] bool CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldc.i4.1
+    IL_0002:  stloc.0
+    IL_0003:  br.s       IL_0005
+
+    IL_0005:  ldloc.0
+    IL_0006:  ret
+  } // end of method aq::a
+
+  .method public hidebysig static void  updateAllisNormal_test() cil managed
+  {
+    // 代码大小       33 (0x21)
+    .maxstack  2
+    .locals init ([0] class [System.Data]System.Data.DataTable table2,
+             [1] string sid,
+             [2] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  stloc.2
+    IL_000a:  ldloc.2
+    IL_000b:  brtrue.s   IL_0020
+
+    IL_000d:  nop
+    IL_000e:  ldnull
+    IL_000f:  stloc.0
+    IL_0010:  ldstr      ""
+    IL_0015:  stloc.1
+    IL_0016:  ldloca.s   table2
+    IL_0018:  ldloc.1
+    IL_0019:  call       void aq::updateAllisNormal(class [System.Data]System.Data.DataTable&,
+                                                    string)
+    IL_001e:  nop
+    IL_001f:  nop
+    IL_0020:  ret
+  } // end of method aq::updateAllisNormal_test
+
+  .method public hidebysig static void  updateAllisNormal(class [System.Data]System.Data.DataTable& table2,
+                                                          string sid) cil managed
+  {
+    // 代码大小       40 (0x28)
+    .maxstack  4
+    .locals init ([0] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  stloc.0
+    IL_000a:  ldloc.0
+    IL_000b:  brtrue.s   IL_0027
+
+    IL_000d:  nop
+    IL_000e:  ldarg.0
+    IL_000f:  ldarg.1
+    IL_0010:  ldc.i4     0x3e8
+    IL_0015:  box        [mscorlib]System.Int32
+    IL_001a:  ldc.i4.1
+    IL_001b:  box        [mscorlib]System.Int32
+    IL_0020:  call       class [System.Data]System.Data.DataRow aq::a(class [System.Data]System.Data.DataTable&,
+                                                                      object,
+                                                                      object,
+                                                                      object)
+    IL_0025:  pop
+    IL_0026:  nop
+    IL_0027:  ret
+  } // end of method aq::updateAllisNormal
+
+  .method public hidebysig static class [System.Data]System.Data.DataRow 
+          a(class [System.Data]System.Data.DataTable& A_0,
+            object A_1,
+            object A_2,
+            object A_3) cil managed
+  {
+    // 代码大小       92 (0x5c)
+    .maxstack  3
+    .locals init ([0] object[] values,
+             [1] class [System.Data]System.Data.DataRow row,
+             [2] class [mscorlib]System.Exception exception,
+             [3] class [System.Data]System.Data.DataRow CS$1$0000,
+             [4] object[] CS$0$0001)
+    IL_0000:  nop
+    .try
+    {
+      IL_0001:  nop
+      IL_0002:  ldnull
+      IL_0003:  stloc.0
+      IL_0004:  ldc.i4.4
+      IL_0005:  newarr     [mscorlib]System.Object
+      IL_000a:  stloc.s    CS$0$0001
+      IL_000c:  ldloc.s    CS$0$0001
+      IL_000e:  ldc.i4.0
+      IL_000f:  ldarg.1
+      IL_0010:  stelem.ref
+      IL_0011:  ldloc.s    CS$0$0001
+      IL_0013:  ldc.i4.1
+      IL_0014:  ldarg.2
+      IL_0015:  stelem.ref
+      IL_0016:  ldloc.s    CS$0$0001
+      IL_0018:  ldc.i4.2
+      IL_0019:  ldarg.3
+      IL_001a:  stelem.ref
+      IL_001b:  ldloc.s    CS$0$0001
+      IL_001d:  ldc.i4.3
+      IL_001e:  call       valuetype [mscorlib]System.DateTime [mscorlib]System.DateTime::get_Now()
+      IL_0023:  box        [mscorlib]System.DateTime
+      IL_0028:  stelem.ref
+      IL_0029:  ldloc.s    CS$0$0001
+      IL_002b:  stloc.0
+      IL_002c:  ldnull
+      IL_002d:  stloc.1
+      IL_002e:  ldarg.0
+      IL_002f:  ldind.ref
+      IL_0030:  callvirt   instance class [System.Data]System.Data.DataRowCollection [System.Data]System.Data.DataTable::get_Rows()
+      IL_0035:  ldloc.0
+      IL_0036:  callvirt   instance class [System.Data]System.Data.DataRow [System.Data]System.Data.DataRowCollection::Add(object[])
+      IL_003b:  stloc.1
+      IL_003c:  ldloc.1
+      IL_003d:  callvirt   instance void [System.Data]System.Data.DataRow::AcceptChanges()
+      IL_0042:  nop
+      IL_0043:  ldloc.1
+      IL_0044:  stloc.3
+      IL_0045:  leave.s    IL_0059
+
+    }  // end .try
+    catch [mscorlib]System.Exception 
+    {
+      IL_0047:  stloc.2
+      IL_0048:  nop
+      IL_0049:  ldloc.2
+      IL_004a:  callvirt   instance string [mscorlib]System.Object::ToString()
+      IL_004f:  call       void e::b(string)
+      IL_0054:  nop
+      IL_0055:  ldnull
+      IL_0056:  stloc.3
+      IL_0057:  leave.s    IL_0059
+
+    }  // end handler
+    IL_0059:  nop
+    IL_005a:  ldloc.3
+    IL_005b:  ret
+  } // end of method aq::a
+
+  .method public hidebysig static class bn 
+          x(string A_0) cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  1
+    .locals init ([0] class bn CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldnull
+    IL_0002:  stloc.0
+    IL_0003:  br.s       IL_0005
+
+    IL_0005:  ldloc.0
+    IL_0006:  ret
+  } // end of method aq::x
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method aq::.ctor
+
+} // end of class aq
+
+.class public auto ansi beforefieldinit b1
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  chaptre_mobile_confirm() cil managed
+  {
+    // 代码大小       40 (0x28)
+    .maxstack  2
+    .locals init ([0] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  ldc.i4.0
+    IL_000a:  ceq
+    IL_000c:  stloc.0
+    IL_000d:  ldloc.0
+    IL_000e:  brtrue.s   IL_0027
+
+    IL_0010:  nop
+    IL_0011:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0016:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_001b:  ldstr      "<script language=\"javascript\">function getWindowWi"
+    + "dth(){var windowWidth=0;if(typeof(window.innerWidth)=='number'){windowW"
+    + "idth=window.innerWidth}else{if(document.documentElement&&document.docum"
+    + "entElement.clientWidth){windowWidth=document.documentElement.clientWidt"
+    + "h}else{if(document.body&&document.body.clientWidth){windowWidth=documen"
+    + "t.body.clientWidth}}}return windowWidth}function LR_hcloopJS_1(url,para"
+    + "m){var me=arguments.callee;var src=url.indexOf('\?')=='-1'\?url+'\?':url;s"
+    + "rc+=param+'&d='+new Date().getTime();me.Script&&me.Script.parentNode.re"
+    + "moveChild(me.Script);me.Script=document.createElement('script');me.Scri"
+    + "pt.setAttribute('type','text/javascript');me.Script.src=src;document.ge"
+    + "tElementsByTagName('head')[0].appendChild(me.Script)}function LR_sendCo"
+    + "nfirm(clientX){if(LR_cid==''||LR_cid==null || window.inputIsFocus==fals"
+    + "e){setTimeout('LR_sendConfirm('+clientX+')',500);return}LR_hcloopJS_1(L"
+    + "R_sysurl+'js/JS_Confirm.aspx\?eventx='+clientX+'&clientx='+getWindowWidt"
+    + "h()+'&id='+LR_siteid+'&sid='+LR_sid+'&cid='+LR_cid)}function LR_mobilec"
+    + "onfirm(event){var touch=event.touches[0];document.removeEventListener('"
+    + "touchstart',LR_mobileconfirm,false);LR_sendConfirm(touch.clientX)}docum"
+    + "ent.addEventListener('touchstart',LR_mobileconfirm,false);</script>"
+    IL_0020:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_0025:  nop
+    IL_0026:  nop
+    IL_0027:  ret
+  } // end of method b1::chaptre_mobile_confirm
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method b1::.ctor
+
+} // end of class b1
+
+.class public auto ansi beforefieldinit b7
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  swtDefendSetting() cil managed
+  {
+    // 代码大小       285 (0x11d)
+    .maxstack  4
+    .locals init ([0] string str,
+             [1] string defendtype,
+             [2] int32 defendvalue,
+             [3] string str3,
+             [4] class [mscorlib]System.Exception ex,
+             [5] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     bool a3::j
+    IL_0006:  ldc.i4.0
+    IL_0007:  ceq
+    IL_0009:  stloc.s    CS$4$0000
+    IL_000b:  ldloc.s    CS$4$0000
+    IL_000d:  brtrue     IL_011c
+
+    IL_0012:  nop
+    IL_0013:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0018:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_001d:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_QueryString()
+    IL_0022:  ldstr      "siteid"
+    IL_0027:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_002c:  stloc.0
+    IL_002d:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0032:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_0037:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_003c:  ldstr      "defendtype"
+    IL_0041:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_0046:  stloc.1
+    IL_0047:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_004c:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_0051:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0056:  ldstr      "defendvalue"
+    IL_005b:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_0060:  call       int32 [mscorlib]System.Convert::ToInt32(string)
+    IL_0065:  stloc.2
+    .try
+    {
+      IL_0066:  nop
+      IL_0067:  ldloc.0
+      IL_0068:  brfalse.s  IL_0078
+
+      IL_006a:  ldloc.0
+      IL_006b:  callvirt   instance int32 [mscorlib]System.String::get_Length()
+      IL_0070:  ldc.i4.8
+      IL_0071:  ceq
+      IL_0073:  ldc.i4.0
+      IL_0074:  ceq
+      IL_0076:  br.s       IL_0079
+
+      IL_0078:  ldc.i4.1
+      IL_0079:  nop
+      IL_007a:  stloc.s    CS$4$0000
+      IL_007c:  ldloc.s    CS$4$0000
+      IL_007e:  brtrue     IL_0104
+
+      IL_0083:  nop
+      IL_0084:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_0089:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+      IL_008e:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+      IL_0093:  ldstr      "sn"
+      IL_0098:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+      IL_009d:  stloc.3
+      IL_009e:  ldloc.0
+      IL_009f:  ldnull
+      IL_00a0:  ldloc.3
+      IL_00a1:  ldnull
+      IL_00a2:  call       bool aq::a(string,
+                                      class bn,
+                                      string,
+                                      string)
+      IL_00a7:  stloc.s    CS$4$0000
+      IL_00a9:  ldloc.s    CS$4$0000
+      IL_00ab:  brtrue.s   IL_00cb
+
+      IL_00ad:  nop
+      IL_00ae:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_00b3:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_00b8:  ldstr      "r"
+      IL_00bd:  ldstr      "server err"
+      IL_00c2:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_00c7:  nop
+      IL_00c8:  nop
+      IL_00c9:  br.s       IL_0103
+
+      IL_00cb:  nop
+      IL_00cc:  ldloc.1
+      IL_00cd:  ldstr      "VerifyUser_Defend_On"
+      IL_00d2:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                     string)
+      IL_00d7:  ldc.i4.0
+      IL_00d8:  ceq
+      IL_00da:  stloc.s    CS$4$0000
+      IL_00dc:  ldloc.s    CS$4$0000
+      IL_00de:  brtrue.s   IL_00e8
+
+      IL_00e0:  nop
+      IL_00e1:  ldloc.2
+      IL_00e2:  stsfld     int32 a3::Global_Guard_verifyUsr_ON
+      IL_00e7:  nop
+      IL_00e8:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_00ed:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_00f2:  ldstr      "r"
+      IL_00f7:  ldstr      "ok"
+      IL_00fc:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_0101:  nop
+      IL_0102:  nop
+      IL_0103:  nop
+      IL_0104:  nop
+      IL_0105:  leave.s    IL_011a
+
+    }  // end .try
+    catch [mscorlib]System.Exception 
+    {
+      IL_0107:  stloc.s    ex
+      IL_0109:  nop
+      IL_010a:  ldloc.s    ex
+      IL_010c:  callvirt   instance string [mscorlib]System.Object::ToString()
+      IL_0111:  call       void e::b(string)
+      IL_0116:  nop
+      IL_0117:  nop
+      IL_0118:  leave.s    IL_011a
+
+    }  // end handler
+    IL_011a:  nop
+    IL_011b:  nop
+    IL_011c:  ret
+  } // end of method b7::swtDefendSetting
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method b7::.ctor
+
+} // end of class b7
+
+.class public auto ansi beforefieldinit bn
+       extends [System.Data]System.Data.DataSet
+{
+  .method public hidebysig instance class [System.Data]System.Data.DataTableCollection 
+          w() cil managed
+  {
+    // 代码大小       12 (0xc)
+    .maxstack  1
+    .locals init ([0] class [System.Data]System.Data.DataTableCollection CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldarg.0
+    IL_0002:  call       instance class [System.Data]System.Data.DataTableCollection [System.Data]System.Data.DataSet::get_Tables()
+    IL_0007:  stloc.0
+    IL_0008:  br.s       IL_000a
+
+    IL_000a:  ldloc.0
+    IL_000b:  ret
+  } // end of method bn::w
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System.Data]System.Data.DataSet::.ctor()
+    IL_0006:  ret
+  } // end of method bn::.ctor
+
+} // end of class bn
+
+.class public auto ansi beforefieldinit bz
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  echo_confirm() cil managed
+  {
+    // 代码大小       40 (0x28)
+    .maxstack  2
+    .locals init ([0] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  ldc.i4.0
+    IL_000a:  ceq
+    IL_000c:  stloc.0
+    IL_000d:  ldloc.0
+    IL_000e:  brtrue.s   IL_0027
+
+    IL_0010:  nop
+    IL_0011:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0016:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_001b:  ldstr      bytearray (76 00 61 00 72 00 20 00 4C 00 52 00 5F 00 63 00   // v.a.r. .L.R._.c.
+                                    65 00 6E 00 74 00 65 00 72 00 4D 00 73 00 67 00   // e.n.t.e.r.M.s.g.
+                                    44 00 69 00 76 00 3D 00 6E 00 75 00 6C 00 6C 00   // D.i.v.=.n.u.l.l.
+                                    2C 00 4C 00 52 00 5F 00 63 00 65 00 6E 00 74 00   // ,.L.R._.c.e.n.t.
+                                    65 00 72 00 4D 00 73 00 67 00 44 00 69 00 76 00   // e.r.M.s.g.D.i.v.
+                                    5F 00 63 00 68 00 65 00 63 00 6B 00 65 00 64 00   // _.c.h.e.c.k.e.d.
+                                    3D 00 66 00 61 00 6C 00 73 00 65 00 3B 00 76 00   // =.f.a.l.s.e.;.v.
+                                    61 00 72 00 20 00 4C 00 52 00 5F 00 63 00 65 00   // a.r. .L.R._.c.e.
+                                    6E 00 74 00 65 00 72 00 4D 00 73 00 67 00 44 00   // n.t.e.r.M.s.g.D.
+                                    69 00 76 00 53 00 74 00 61 00 74 00 75 00 3D 00   // i.v.S.t.a.t.u.=.
+                                    6E 00 75 00 6C 00 6C 00 3B 00 66 00 75 00 6E 00   // n.u.l.l.;.f.u.n.
+                                    63 00 74 00 69 00 6F 00 6E 00 20 00 4C 00 52 00   // c.t.i.o.n. .L.R.
+                                    5F 00 47 00 65 00 74 00 43 00 6F 00 6E 00 66 00   // _.G.e.t.C.o.n.f.
+                                    69 00 72 00 6D 00 45 00 6C 00 65 00 6D 00 65 00   // i.r.m.E.l.e.m.e.
+                                    6E 00 74 00 28 00 29 00 7B 00 76 00 61 00 72 00   // n.t.(.).{.v.a.r.
+                                    20 00 65 00 6C 00 73 00 3D 00 64 00 6F 00 63 00   //  .e.l.s.=.d.o.c.
+                                    75 00 6D 00 65 00 6E 00 74 00 2E 00 67 00 65 00   // u.m.e.n.t...g.e.
+                                    74 00 45 00 6C 00 65 00 6D 00 65 00 6E 00 74 00   // t.E.l.e.m.e.n.t.
+                                    73 00 42 00 79 00 54 00 61 00 67 00 4E 00 61 00   // s.B.y.T.a.g.N.a.
+                                    6D 00 65 00 28 00 27 00 44 00 49 00 56 00 27 00   // m.e.(.'.D.I.V.'.
+                                    29 00 3B 00 66 00 6F 00 72 00 28 00 76 00 61 00   // ).;.f.o.r.(.v.a.
+                                    72 00 20 00 69 00 3D 00 30 00 3B 00 69 00 3C 00   // r. .i.=.0.;.i.<.
+                                    65 00 6C 00 73 00 2E 00 6C 00 65 00 6E 00 67 00   // e.l.s...l.e.n.g.
+                                    74 00 68 00 3B 00 69 00 2B 00 2B 00 29 00 7B 00   // t.h.;.i.+.+.).{.
+                                    76 00 61 00 72 00 20 00 65 00 6C 00 5F 00 7A 00   // v.a.r. .e.l._.z.
+                                    3D 00 4C 00 52 00 5F 00 47 00 65 00 74 00 73 00   // =.L.R._.G.e.t.s.
+                                    74 00 79 00 6C 00 65 00 28 00 65 00 6C 00 73 00   // t.y.l.e.(.e.l.s.
+                                    5B 00 69 00 5D 00 2C 00 27 00 7A 00 49 00 6E 00   // [.i.].,.'.z.I.n.
+                                    64 00 65 00 78 00 27 00 29 00 3B 00 76 00 61 00   // d.e.x.'.).;.v.a.
+                                    72 00 20 00 70 00 6F 00 73 00 69 00 74 00 69 00   // r. .p.o.s.i.t.i.
+                                    6F 00 6E 00 5F 00 7A 00 3D 00 4C 00 52 00 5F 00   // o.n._.z.=.L.R._.
+                                    47 00 65 00 74 00 73 00 74 00 79 00 6C 00 65 00   // G.e.t.s.t.y.l.e.
+                                    28 00 65 00 6C 00 73 00 5B 00 69 00 5D 00 2C 00   // (.e.l.s.[.i.].,.
+                                    27 00 70 00 6F 00 73 00 69 00 74 00 69 00 6F 00   // '.p.o.s.i.t.i.o.
+                                    6E 00 27 00 29 00 3B 00 76 00 61 00 72 00 20 00   // n.'.).;.v.a.r. .
+                                    62 00 6F 00 74 00 74 00 6F 00 6D 00 5F 00 7A 00   // b.o.t.t.o.m._.z.
+                                    3D 00 4C 00 52 00 5F 00 47 00 65 00 74 00 73 00   // =.L.R._.G.e.t.s.
+                                    74 00 79 00 6C 00 65 00 28 00 65 00 6C 00 73 00   // t.y.l.e.(.e.l.s.
+                                    5B 00 69 00 5D 00 2C 00 27 00 62 00 6F 00 74 00   // [.i.].,.'.b.o.t.
+                                    74 00 6F 00 6D 00 27 00 29 00 3B 00 69 00 66 00   // t.o.m.'.).;.i.f.
+                                    28 00 70 00 61 00 72 00 73 00 65 00 49 00 6E 00   // (.p.a.r.s.e.I.n.
+                                    74 00 28 00 65 00 6C 00 5F 00 7A 00 29 00 3E 00   // t.(.e.l._.z.).>.
+                                    35 00 30 00 30 00 26 00 26 00 70 00 6F 00 73 00   // 5.0.0.&.&.p.o.s.
+                                    69 00 74 00 69 00 6F 00 6E 00 5F 00 7A 00 2E 00   // i.t.i.o.n._.z...
+                                    69 00 6E 00 64 00 65 00 78 00 4F 00 66 00 28 00   // i.n.d.e.x.O.f.(.
+                                    27 00 66 00 69 00 78 00 65 00 64 00 27 00 29 00   // '.f.i.x.e.d.'.).
+                                    21 00 3D 00 2D 00 31 00 26 00 26 00 62 00 6F 00   // !.=.-.1.&.&.b.o.
+                                    74 00 74 00 6F 00 6D 00 5F 00 7A 00 21 00 3D 00   // t.t.o.m._.z.!.=.
+                                    27 00 30 00 70 00 78 00 27 00 29 00 7B 00 76 00   // '.0.p.x.'.).{.v.
+                                    61 00 72 00 20 00 65 00 6C 00 5F 00 6C 00 65 00   // a.r. .e.l._.l.e.
+                                    66 00 74 00 3D 00 4C 00 52 00 5F 00 47 00 65 00   // f.t.=.L.R._.G.e.
+                                    74 00 73 00 74 00 79 00 6C 00 65 00 28 00 65 00   // t.s.t.y.l.e.(.e.
+                                    6C 00 73 00 5B 00 69 00 5D 00 2C 00 27 00 6C 00   // l.s.[.i.].,.'.l.
+                                    65 00 66 00 74 00 27 00 29 00 3B 00 69 00 66 00   // e.f.t.'.).;.i.f.
+                                    28 00 65 00 6C 00 5F 00 6C 00 65 00 66 00 74 00   // (.e.l._.l.e.f.t.
+                                    3D 00 3D 00 27 00 35 00 30 00 25 00 27 00 29 00   // =.=.'.5.0.%.'.).
+                                    7B 00 4C 00 52 00 5F 00 63 00 65 00 6E 00 74 00   // {.L.R._.c.e.n.t.
+                                    65 00 72 00 4D 00 73 00 67 00 44 00 69 00 76 00   // e.r.M.s.g.D.i.v.
+                                    3D 00 65 00 6C 00 73 00 5B 00 69 00 5D 00 3B 00   // =.e.l.s.[.i.].;.
+                                    4C 00 52 00 5F 00 43 00 68 00 65 00 63 00 6B 00   // L.R._.C.h.e.c.k.
+                                    43 00 6F 00 6E 00 66 00 69 00 72 00 6D 00 45 00   // C.o.n.f.i.r.m.E.
+                                    6C 00 65 00 6D 00 65 00 6E 00 74 00 28 00 29 00   // l.e.m.e.n.t.(.).
+                                    3B 00 72 00 65 00 74 00 75 00 72 00 6E 00 7D 00   // ;.r.e.t.u.r.n.}.
+                                    69 00 66 00 28 00 65 00 6C 00 5F 00 6C 00 65 00   // i.f.(.e.l._.l.e.
+                                    66 00 74 00 2E 00 69 00 6E 00 64 00 65 00 78 00   // f.t...i.n.d.e.x.
+                                    4F 00 66 00 28 00 27 00 70 00 78 00 27 00 29 00   // O.f.(.'.p.x.'.).
+                                    21 00 3D 00 2D 00 31 00 29 00 7B 00 76 00 61 00   // !.=.-.1.).{.v.a.
+                                    72 00 20 00 65 00 6C 00 5F 00 6C 00 65 00 66 00   // r. .e.l._.l.e.f.
+                                    74 00 5F 00 69 00 6E 00 74 00 3D 00 70 00 61 00   // t._.i.n.t.=.p.a.
+                                    72 00 73 00 65 00 49 00 6E 00 74 00 28 00 65 00   // r.s.e.I.n.t.(.e.
+                                    6C 00 5F 00 6C 00 65 00 66 00 74 00 2E 00 72 00   // l._.l.e.f.t...r.
+                                    65 00 70 00 6C 00 61 00 63 00 65 00 28 00 27 00   // e.p.l.a.c.e.(.'.
+                                    70 00 78 00 27 00 29 00 29 00 3B 00 69 00 66 00   // p.x.'.).).;.i.f.
+                                    28 00 65 00 6C 00 5F 00 6C 00 65 00 66 00 74 00   // (.e.l._.l.e.f.t.
+                                    5F 00 69 00 6E 00 74 00 3E 00 32 00 30 00 30 00   // _.i.n.t.>.2.0.0.
+                                    29 00 7B 00 4C 00 52 00 5F 00 63 00 65 00 6E 00   // ).{.L.R._.c.e.n.
+                                    74 00 65 00 72 00 4D 00 73 00 67 00 44 00 69 00   // t.e.r.M.s.g.D.i.
+                                    76 00 3D 00 65 00 6C 00 73 00 5B 00 69 00 5D 00   // v.=.e.l.s.[.i.].
+                                    3B 00 4C 00 52 00 5F 00 43 00 68 00 65 00 63 00   // ;.L.R._.C.h.e.c.
+                                    6B 00 43 00 6F 00 6E 00 66 00 69 00 72 00 6D 00   // k.C.o.n.f.i.r.m.
+                                    45 00 6C 00 65 00 6D 00 65 00 6E 00 74 00 28 00   // E.l.e.m.e.n.t.(.
+                                    29 00 3B 00 72 00 65 00 74 00 75 00 72 00 6E 00   // ).;.r.e.t.u.r.n.
+                                    7D 00 7D 00 7D 00 7D 00 69 00 66 00 28 00 4C 00   // }.}.}.}.i.f.(.L.
+                                    52 00 5F 00 63 00 65 00 6E 00 74 00 65 00 72 00   // R._.c.e.n.t.e.r.
+                                    4D 00 73 00 67 00 44 00 69 00 76 00 5F 00 63 00   // M.s.g.D.i.v._.c.
+                                    68 00 65 00 63 00 6B 00 65 00 64 00 29 00 7B 00   // h.e.c.k.e.d.).{.
+                                    4C 00 52 00 5F 00 73 00 68 00 6F 00 77 00 49 00   // L.R._.s.h.o.w.I.
+                                    6E 00 76 00 69 00 74 00 65 00 44 00 69 00 76 00   // n.v.i.t.e.D.i.v.
+                                    28 00 27 00 22 6B CE 8F A8 54 E2 8B 27 00 2C 00   // (.'."k...T..'.,.
+                                    5F 00 6C 00 72 00 5F 00 69 00 6E 00 76 00 69 00   // _.l.r._.i.n.v.i.
+                                    74 00 65 00 73 00 74 00 72 00 69 00 6E 00 67 00   // t.e.s.t.r.i.n.g.
+                                    29 00 7D 00 69 00 66 00 28 00 4C 00 52 00 5F 00   // ).}.i.f.(.L.R._.
+                                    63 00 65 00 6E 00 74 00 65 00 72 00 4D 00 73 00   // c.e.n.t.e.r.M.s.
+                                    67 00 44 00 69 00 76 00 3D 00 3D 00 6E 00 75 00   // g.D.i.v.=.=.n.u.
+                                    6C 00 6C 00 26 00 26 00 21 00 4C 00 52 00 5F 00   // l.l.&.&.!.L.R._.
+                                    63 00 65 00 6E 00 74 00 65 00 72 00 4D 00 73 00   // c.e.n.t.e.r.M.s.
+                                    67 00 44 00 69 00 76 00 5F 00 63 00 68 00 65 00   // g.D.i.v._.c.h.e.
+                                    63 00 6B 00 65 00 64 00 29 00 7B 00 4C 00 52 00   // c.k.e.d.).{.L.R.
+                                    5F 00 63 00 65 00 6E 00 74 00 65 00 72 00 4D 00   // _.c.e.n.t.e.r.M.
+                                    73 00 67 00 44 00 69 00 76 00 5F 00 63 00 68 00   // s.g.D.i.v._.c.h.
+                                    65 00 63 00 6B 00 65 00 64 00 3D 00 74 00 72 00   // e.c.k.e.d.=.t.r.
+                                    75 00 65 00 3B 00 73 00 65 00 74 00 54 00 69 00   // u.e.;.s.e.t.T.i.
+                                    6D 00 65 00 6F 00 75 00 74 00 28 00 27 00 4C 00   // m.e.o.u.t.(.'.L.
+                                    52 00 5F 00 47 00 65 00 74 00 43 00 6F 00 6E 00   // R._.G.e.t.C.o.n.
+                                    66 00 69 00 72 00 6D 00 45 00 6C 00 65 00 6D 00   // f.i.r.m.E.l.e.m.
+                                    65 00 6E 00 74 00 28 00 29 00 27 00 2C 00 33 00   // e.n.t.(.).'.,.3.
+                                    30 00 30 00 30 00 29 00 3B 00 72 00 65 00 74 00   // 0.0.0.).;.r.e.t.
+                                    75 00 72 00 6E 00 7D 00 7D 00 66 00 75 00 6E 00   // u.r.n.}.}.f.u.n.
+                                    63 00 74 00 69 00 6F 00 6E 00 20 00 4C 00 52 00   // c.t.i.o.n. .L.R.
+                                    5F 00 47 00 65 00 74 00 73 00 74 00 79 00 6C 00   // _.G.e.t.s.t.y.l.
+                                    65 00 28 00 6F 00 62 00 6A 00 2C 00 70 00 72 00   // e.(.o.b.j.,.p.r.
+                                    6F 00 70 00 65 00 72 00 74 00 79 00 29 00 7B 00   // o.p.e.r.t.y.).{.
+                                    69 00 66 00 28 00 6F 00 62 00 6A 00 2E 00 63 00   // i.f.(.o.b.j...c.
+                                    75 00 72 00 72 00 65 00 6E 00 74 00 53 00 74 00   // u.r.r.e.n.t.S.t.
+                                    79 00 6C 00 65 00 29 00 7B 00 72 00 65 00 74 00   // y.l.e.).{.r.e.t.
+                                    75 00 72 00 6E 00 20 00 6F 00 62 00 6A 00 2E 00   // u.r.n. .o.b.j...
+                                    63 00 75 00 72 00 72 00 65 00 6E 00 74 00 53 00   // c.u.r.r.e.n.t.S.
+                                    74 00 79 00 6C 00 65 00 5B 00 70 00 72 00 6F 00   // t.y.l.e.[.p.r.o.
+                                    70 00 65 00 72 00 74 00 79 00 5D 00 7D 00 65 00   // p.e.r.t.y.].}.e.
+                                    6C 00 73 00 65 00 20 00 69 00 66 00 28 00 77 00   // l.s.e. .i.f.(.w.
+                                    69 00 6E 00 64 00 6F 00 77 00 2E 00 67 00 65 00   // i.n.d.o.w...g.e.
+                                    74 00 43 00 6F 00 6D 00 70 00 75 00 74 00 65 00   // t.C.o.m.p.u.t.e.
+                                    64 00 53 00 74 00 79 00 6C 00 65 00 29 00 7B 00   // d.S.t.y.l.e.).{.
+                                    72 00 65 00 74 00 75 00 72 00 6E 00 20 00 64 00   // r.e.t.u.r.n. .d.
+                                    6F 00 63 00 75 00 6D 00 65 00 6E 00 74 00 2E 00   // o.c.u.m.e.n.t...
+                                    64 00 65 00 66 00 61 00 75 00 6C 00 74 00 56 00   // d.e.f.a.u.l.t.V.
+                                    69 00 65 00 77 00 2E 00 67 00 65 00 74 00 43 00   // i.e.w...g.e.t.C.
+                                    6F 00 6D 00 70 00 75 00 74 00 65 00 64 00 53 00   // o.m.p.u.t.e.d.S.
+                                    74 00 79 00 6C 00 65 00 28 00 6F 00 62 00 6A 00   // t.y.l.e.(.o.b.j.
+                                    2C 00 6E 00 75 00 6C 00 6C 00 29 00 5B 00 70 00   // ,.n.u.l.l.).[.p.
+                                    72 00 6F 00 70 00 65 00 72 00 74 00 79 00 5D 00   // r.o.p.e.r.t.y.].
+                                    7D 00 72 00 65 00 74 00 75 00 72 00 6E 00 20 00   // }.r.e.t.u.r.n. .
+                                    6E 00 75 00 6C 00 6C 00 7D 00 66 00 75 00 6E 00   // n.u.l.l.}.f.u.n.
+                                    63 00 74 00 69 00 6F 00 6E 00 20 00 4C 00 52 00   // c.t.i.o.n. .L.R.
+                                    5F 00 43 00 68 00 65 00 63 00 6B 00 43 00 6F 00   // _.C.h.e.c.k.C.o.
+                                    6E 00 66 00 69 00 72 00 6D 00 45 00 6C 00 65 00   // n.f.i.r.m.E.l.e.
+                                    6D 00 65 00 6E 00 74 00 28 00 29 00 7B 00 69 00   // m.e.n.t.(.).{.i.
+                                    66 00 28 00 4C 00 52 00 5F 00 63 00 65 00 6E 00   // f.(.L.R._.c.e.n.
+                                    74 00 65 00 72 00 4D 00 73 00 67 00 44 00 69 00   // t.e.r.M.s.g.D.i.
+                                    76 00 53 00 74 00 61 00 74 00 75 00 3D 00 3D 00   // v.S.t.a.t.u.=.=.
+                                    6E 00 75 00 6C 00 6C 00 29 00 7B 00 4C 00 52 00   // n.u.l.l.).{.L.R.
+                                    5F 00 63 00 65 00 6E 00 74 00 65 00 72 00 4D 00   // _.c.e.n.t.e.r.M.
+                                    73 00 67 00 44 00 69 00 76 00 2E 00 73 00 74 00   // s.g.D.i.v...s.t.
+                                    79 00 6C 00 65 00 2E 00 64 00 69 00 73 00 70 00   // y.l.e...d.i.s.p.
+                                    6C 00 61 00 79 00 3D 00 27 00 62 00 6C 00 6F 00   // l.a.y.=.'.b.l.o.
+                                    63 00 6B 00 27 00 3B 00 4C 00 52 00 5F 00 63 00   // c.k.'.;.L.R._.c.
+                                    65 00 6E 00 74 00 65 00 72 00 4D 00 73 00 67 00   // e.n.t.e.r.M.s.g.
+                                    44 00 69 00 76 00 2E 00 73 00 74 00 79 00 6C 00   // D.i.v...s.t.y.l.
+                                    65 00 2E 00 76 00 69 00 73 00 69 00 62 00 69 00   // e...v.i.s.i.b.i.
+                                    6C 00 69 00 74 00 79 00 3D 00 27 00 76 00 69 00   // l.i.t.y.=.'.v.i.
+                                    73 00 69 00 62 00 6C 00 65 00 27 00 7D 00 76 00   // s.i.b.l.e.'.}.v.
+                                    61 00 72 00 20 00 6C 00 72 00 5F 00 64 00 73 00   // a.r. .l.r._.d.s.
+                                    70 00 3D 00 4C 00 52 00 5F 00 63 00 65 00 6E 00   // p.=.L.R._.c.e.n.
+                                    74 00 65 00 72 00 4D 00 73 00 67 00 44 00 69 00   // t.e.r.M.s.g.D.i.
+                                    76 00 2E 00 73 00 74 00 79 00 6C 00 65 00 2E 00   // v...s.t.y.l.e...
+                                    64 00 69 00 73 00 70 00 6C 00 61 00 79 00 3B 00   // d.i.s.p.l.a.y.;.
+                                    76 00 61 00 72 00 20 00 6C 00 72 00 5F 00 76 00   // v.a.r. .l.r._.v.
+                                    69 00 73 00 69 00 62 00 6C 00 65 00 3D 00 4C 00   // i.s.i.b.l.e.=.L.
+                                    52 00 5F 00 63 00 65 00 6E 00 74 00 65 00 72 00   // R._.c.e.n.t.e.r.
+                                    4D 00 73 00 67 00 44 00 69 00 76 00 2E 00 73 00   // M.s.g.D.i.v...s.
+                                    74 00 79 00 6C 00 65 00 2E 00 76 00 69 00 73 00   // t.y.l.e...v.i.s.
+                                    69 00 62 00 69 00 6C 00 69 00 74 00 79 00 3B 00   // i.b.i.l.i.t.y.;.
+                                    69 00 66 00 28 00 4C 00 52 00 5F 00 63 00 65 00   // i.f.(.L.R._.c.e.
+                                    6E 00 74 00 65 00 72 00 4D 00 73 00 67 00 44 00   // n.t.e.r.M.s.g.D.
+                                    69 00 76 00 53 00 74 00 61 00 74 00 75 00 21 00   // i.v.S.t.a.t.u.!.
+                                    3D 00 6E 00 75 00 6C 00 6C 00 29 00 7B 00 69 00   // =.n.u.l.l.).{.i.
+                                    66 00 28 00 6C 00 72 00 5F 00 64 00 73 00 70 00   // f.(.l.r._.d.s.p.
+                                    3D 00 3D 00 27 00 6E 00 6F 00 6E 00 65 00 27 00   // =.=.'.n.o.n.e.'.
+                                    7C 00 7C 00 6C 00 72 00 5F 00 76 00 69 00 73 00   // |.|.l.r._.v.i.s.
+                                    69 00 62 00 6C 00 65 00 3D 00 3D 00 27 00 68 00   // i.b.l.e.=.=.'.h.
+                                    69 00 64 00 64 00 65 00 6E 00 27 00 29 00 7B 00   // i.d.d.e.n.'.).{.
+                                    4C 00 52 00 5F 00 63 00 6F 00 6E 00 66 00 69 00   // L.R._.c.o.n.f.i.
+                                    72 00 6D 00 28 00 29 00 3B 00 72 00 65 00 74 00   // r.m.(.).;.r.e.t.
+                                    75 00 72 00 6E 00 7D 00 69 00 66 00 28 00 4C 00   // u.r.n.}.i.f.(.L.
+                                    52 00 5F 00 63 00 65 00 6E 00 74 00 65 00 72 00   // R._.c.e.n.t.e.r.
+                                    4D 00 73 00 67 00 44 00 69 00 76 00 2E 00 69 00   // M.s.g.D.i.v...i.
+                                    64 00 3D 00 3D 00 27 00 4C 00 52 00 66 00 6C 00   // d.=.=.'.L.R.f.l.
+                                    6F 00 61 00 74 00 65 00 72 00 31 00 27 00 29 00   // o.a.t.e.r.1.'.).
+                                    7B 00 69 00 66 00 28 00 64 00 6F 00 63 00 75 00   // {.i.f.(.d.o.c.u.
+                                    6D 00 65 00 6E 00 74 00 2E 00 67 00 65 00 74 00   // m.e.n.t...g.e.t.
+                                    45 00 6C 00 65 00 6D 00 65 00 6E 00 74 00 42 00   // E.l.e.m.e.n.t.B.
+                                    79 00 49 00 64 00 28 00 27 00 4C 00 52 00 64 00   // y.I.d.(.'.L.R.d.
+                                    69 00 76 00 31 00 27 00 29 00 2E 00 73 00 74 00   // i.v.1.'.)...s.t.
+                                    79 00 6C 00 65 00 2E 00 64 00 69 00 73 00 70 00   // y.l.e...d.i.s.p.
+                                    6C 00 61 00 79 00 3D 00 3D 00 27 00 6E 00 6F 00   // l.a.y.=.=.'.n.o.
+                                    6E 00 65 00 27 00 29 00 7B 00 4C 00 52 00 5F 00   // n.e.'.).{.L.R._.
+                                    63 00 6F 00 6E 00 66 00 69 00 72 00 6D 00 28 00   // c.o.n.f.i.r.m.(.
+                                    29 00 3B 00 72 00 65 00 74 00 75 00 72 00 6E 00   // ).;.r.e.t.u.r.n.
+                                    7D 00 7D 00 7D 00 4C 00 52 00 5F 00 63 00 65 00   // }.}.}.L.R._.c.e.
+                                    6E 00 74 00 65 00 72 00 4D 00 73 00 67 00 44 00   // n.t.e.r.M.s.g.D.
+                                    69 00 76 00 53 00 74 00 61 00 74 00 75 00 3D 00   // i.v.S.t.a.t.u.=.
+                                    6C 00 72 00 5F 00 64 00 73 00 70 00 3B 00 73 00   // l.r._.d.s.p.;.s.
+                                    65 00 74 00 54 00 69 00 6D 00 65 00 6F 00 75 00   // e.t.T.i.m.e.o.u.
+                                    74 00 28 00 27 00 4C 00 52 00 5F 00 43 00 68 00   // t.(.'.L.R._.C.h.
+                                    65 00 63 00 6B 00 43 00 6F 00 6E 00 66 00 69 00   // e.c.k.C.o.n.f.i.
+                                    72 00 6D 00 45 00 6C 00 65 00 6D 00 65 00 6E 00   // r.m.E.l.e.m.e.n.
+                                    74 00 28 00 29 00 27 00 2C 00 31 00 30 00 30 00   // t.(.).'.,.1.0.0.
+                                    30 00 29 00 7D 00 66 00 75 00 6E 00 63 00 74 00   // 0.).}.f.u.n.c.t.
+                                    69 00 6F 00 6E 00 20 00 4C 00 52 00 5F 00 63 00   // i.o.n. .L.R._.c.
+                                    6F 00 6E 00 66 00 69 00 72 00 6D 00 28 00 29 00   // o.n.f.i.r.m.(.).
+                                    7B 00 69 00 66 00 28 00 4C 00 52 00 5F 00 63 00   // {.i.f.(.L.R._.c.
+                                    69 00 64 00 3D 00 3D 00 6E 00 75 00 6C 00 6C 00   // i.d.=.=.n.u.l.l.
+                                    7C 00 7C 00 4C 00 52 00 5F 00 63 00 69 00 64 00   // |.|.L.R._.c.i.d.
+                                    3D 00 3D 00 27 00 27 00 29 00 7B 00 73 00 65 00   // =.=.'.'.).{.s.e.
+                                    74 00 54 00 69 00 6D 00 65 00 6F 00 75 00 74 00   // t.T.i.m.e.o.u.t.
+                                    28 00 27 00 4C 00 52 00 5F 00 63 00 6F 00 6E 00   // (.'.L.R._.c.o.n.
+                                    66 00 69 00 72 00 6D 00 28 00 29 00 3B 00 27 00   // f.i.r.m.(.).;.'.
+                                    2C 00 35 00 30 00 30 00 29 00 3B 00 72 00 65 00   // ,.5.0.0.).;.r.e.
+                                    74 00 75 00 72 00 6E 00 7D 00 4C 00 52 00 5F 00   // t.u.r.n.}.L.R._.
+                                    68 00 63 00 6C 00 6F 00 6F 00 70 00 4A 00 53 00   // h.c.l.o.o.p.J.S.
+                                    28 00 4C 00 52 00 5F 00 73 00 79 00 73 00 75 00   // (.L.R._.s.y.s.u.
+                                    72 00 6C 00 2B 00 27 00 6A 00 73 00 2F 00 4A 00   // r.l.+.'.j.s./.J.
+                                    53 00 5F 00 43 00 6F 00 6E 00 66 00 69 00 72 00   // S._.C.o.n.f.i.r.
+                                    6D 00 2E 00 61 00 73 00 70 00 78 00 3F 00 65 00   // m...a.s.p.x.?.e.
+                                    76 00 65 00 6E 00 74 00 78 00 3D 00 31 00 26 00   // v.e.n.t.x.=.1.&.
+                                    63 00 6C 00 69 00 65 00 6E 00 74 00 78 00 3D 00   // c.l.i.e.n.t.x.=.
+                                    31 00 26 00 69 00 64 00 3D 00 27 00 2B 00 4C 00   // 1.&.i.d.=.'.+.L.
+                                    52 00 5F 00 73 00 69 00 74 00 65 00 69 00 64 00   // R._.s.i.t.e.i.d.
+                                    2B 00 27 00 26 00 73 00 69 00 64 00 3D 00 27 00   // +.'.&.s.i.d.=.'.
+                                    2B 00 4C 00 52 00 5F 00 73 00 69 00 64 00 2B 00   // +.L.R._.s.i.d.+.
+                                    27 00 26 00 63 00 69 00 64 00 3D 00 27 00 2B 00   // '.&.c.i.d.=.'.+.
+                                    4C 00 52 00 5F 00 63 00 69 00 64 00 29 00 7D 00   // L.R._.c.i.d.).}.
+                                    4C 00 52 00 5F 00 47 00 65 00 74 00 43 00 6F 00   // L.R._.G.e.t.C.o.
+                                    6E 00 66 00 69 00 72 00 6D 00 45 00 6C 00 65 00   // n.f.i.r.m.E.l.e.
+                                    6D 00 65 00 6E 00 74 00 28 00 29 00 3B 00 )       // m.e.n.t.(.).;.
+    IL_0020:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_0025:  nop
+    IL_0026:  nop
+    IL_0027:  ret
+  } // end of method bz::echo_confirm
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method bz::.ctor
+
+} // end of class bz
+
+.class public auto ansi beforefieldinit cd
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  x() cil managed
+  {
+    // 代码大小       548 (0x224)
+    .maxstack  5
+    .locals init ([0] string key,
+             [1] string operate,
+             [2] string str,
+             [3] class [mscorlib]System.Exception exception,
+             [4] bool CS$4$0000,
+             [5] string CS$4$0001)
+    IL_0000:  nop
+    IL_0001:  ldsfld     bool a3::j
+    IL_0006:  ldc.i4.0
+    IL_0007:  ceq
+    IL_0009:  stloc.s    CS$4$0000
+    IL_000b:  ldloc.s    CS$4$0000
+    IL_000d:  brtrue     IL_0223
+
+    IL_0012:  nop
+    IL_0013:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0018:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_001d:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0022:  ldstr      "key"
+    IL_0027:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_002c:  stloc.0
+    IL_002d:  ldloc.0
+    IL_002e:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0033:  stloc.s    CS$4$0000
+    IL_0035:  ldloc.s    CS$4$0000
+    IL_0037:  brtrue     IL_014a
+
+    IL_003c:  nop
+    IL_003d:  ldloc.0
+    IL_003e:  ldstr      "3DkLt8!TngP"
+    IL_0043:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_0048:  ldc.i4.0
+    IL_0049:  ceq
+    IL_004b:  stloc.s    CS$4$0000
+    IL_004d:  ldloc.s    CS$4$0000
+    IL_004f:  brtrue     IL_0149
+
+    IL_0054:  nop
+    IL_0055:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_005a:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_005f:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0064:  ldstr      "operate"
+    IL_0069:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_006e:  stloc.1
+    IL_006f:  ldloc.1
+    IL_0070:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0075:  stloc.s    CS$4$0000
+    IL_0077:  ldloc.s    CS$4$0000
+    IL_0079:  brtrue     IL_0148
+
+    IL_007e:  nop
+    IL_007f:  ldloc.1
+    IL_0080:  callvirt   instance string [mscorlib]System.String::Trim()
+    IL_0085:  stloc.s    CS$4$0001
+    IL_0087:  ldloc.s    CS$4$0001
+    IL_0089:  brfalse    IL_0129
+
+    IL_008e:  ldloc.s    CS$4$0001
+    IL_0090:  ldstr      "setExpire"
+    IL_0095:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_009a:  brtrue.s   IL_00ba
+
+    IL_009c:  ldloc.s    CS$4$0001
+    IL_009e:  ldstr      "verifyOn"
+    IL_00a3:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_00a8:  brtrue.s   IL_00df
+
+    IL_00aa:  ldloc.s    CS$4$0001
+    IL_00ac:  ldstr      "verifyOff"
+    IL_00b1:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_00b6:  brtrue.s   IL_0104
+
+    IL_00b8:  br.s       IL_0129
+
+    IL_00ba:  ldc.i4.0
+    IL_00bb:  stsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_00c0:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_00c5:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_00ca:  ldstr      "operate"
+    IL_00cf:  ldstr      "success"
+    IL_00d4:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                         string)
+    IL_00d9:  nop
+    IL_00da:  br         IL_0223
+
+    IL_00df:  ldc.i4.1
+    IL_00e0:  stsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_00e5:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_00ea:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_00ef:  ldstr      "operate"
+    IL_00f4:  ldstr      "success"
+    IL_00f9:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                         string)
+    IL_00fe:  nop
+    IL_00ff:  br         IL_0223
+
+    IL_0104:  ldc.i4.0
+    IL_0105:  stsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_010a:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_010f:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_0114:  ldstr      "operate"
+    IL_0119:  ldstr      "success"
+    IL_011e:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                         string)
+    IL_0123:  nop
+    IL_0124:  br         IL_0223
+
+    IL_0129:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_012e:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_0133:  ldstr      "operate"
+    IL_0138:  ldstr      "bad parameter"
+    IL_013d:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                         string)
+    IL_0142:  nop
+    IL_0143:  br         IL_0223
+
+    IL_0148:  nop
+    IL_0149:  nop
+    .try
+    {
+      IL_014a:  nop
+      IL_014b:  ldnull
+      IL_014c:  ldnull
+      IL_014d:  call       bool cd::b(string,
+                                      string)
+      IL_0152:  stloc.s    CS$4$0000
+      IL_0154:  ldloc.s    CS$4$0000
+      IL_0156:  brtrue.s   IL_0176
+
+      IL_0158:  nop
+      IL_0159:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_015e:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_0163:  ldstr      "r"
+      IL_0168:  ldstr      "server err login"
+      IL_016d:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_0172:  nop
+      IL_0173:  nop
+      IL_0174:  br.s       IL_01f3
+
+      IL_0176:  nop
+      IL_0177:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_017c:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+      IL_0181:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+      IL_0186:  ldstr      "s"
+      IL_018b:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+      IL_0190:  stloc.2
+      IL_0191:  ldloc.2
+      IL_0192:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+      IL_0197:  brtrue.s   IL_01a4
+
+      IL_0199:  ldloc.2
+      IL_019a:  callvirt   instance int32 [mscorlib]System.String::get_Length()
+      IL_019f:  ldc.i4.8
+      IL_01a0:  ceq
+      IL_01a2:  br.s       IL_01a5
+
+      IL_01a4:  ldc.i4.0
+      IL_01a5:  nop
+      IL_01a6:  stloc.s    CS$4$0000
+      IL_01a8:  ldloc.s    CS$4$0000
+      IL_01aa:  brtrue.s   IL_01ca
+
+      IL_01ac:  nop
+      IL_01ad:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_01b2:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_01b7:  ldstr      "r"
+      IL_01bc:  ldstr      "server err"
+      IL_01c1:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_01c6:  nop
+      IL_01c7:  nop
+      IL_01c8:  br.s       IL_01f2
+
+      IL_01ca:  nop
+      IL_01cb:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_01d0:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_01d5:  ldstr      "r"
+      IL_01da:  ldstr      "DelSiteID "
+      IL_01df:  ldloc.2
+      IL_01e0:  ldc.i4.0
+      IL_01e1:  call       string h::a(string,
+                                       bool)
+      IL_01e6:  call       string [mscorlib]System.String::Concat(string,
+                                                                  string)
+      IL_01eb:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_01f0:  nop
+      IL_01f1:  nop
+      IL_01f2:  nop
+      IL_01f3:  nop
+      IL_01f4:  leave.s    IL_0221
+
+    }  // end .try
+    catch [mscorlib]System.Exception 
+    {
+      IL_01f6:  stloc.3
+      IL_01f7:  nop
+      IL_01f8:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+      IL_01fd:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+      IL_0202:  ldstr      "r"
+      IL_0207:  ldstr      "server err"
+      IL_020c:  callvirt   instance void [System.Web]System.Web.HttpResponse::AppendHeader(string,
+                                                                                           string)
+      IL_0211:  nop
+      IL_0212:  ldloc.3
+      IL_0213:  callvirt   instance string [mscorlib]System.Object::ToString()
+      IL_0218:  call       void e::b(string)
+      IL_021d:  nop
+      IL_021e:  nop
+      IL_021f:  leave.s    IL_0221
+
+    }  // end handler
+    IL_0221:  nop
+    IL_0222:  nop
+    IL_0223:  ret
+  } // end of method cd::x
+
+  .method public hidebysig static bool  b(string A_0,
+                                          string A_1) cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  1
+    .locals init ([0] bool CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldc.i4.1
+    IL_0002:  stloc.0
+    IL_0003:  br.s       IL_0005
+
+    IL_0005:  ldloc.0
+    IL_0006:  ret
+  } // end of method cd::b
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method cd::.ctor
+
+} // end of class cd
+
+.class public auto ansi beforefieldinit e
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  b(string A_0) cil managed
+  {
+    // 代码大小       2 (0x2)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  ret
+  } // end of method e::b
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method e::.ctor
+
+} // end of class e
+
+.class public auto ansi beforefieldinit gsPublic
+       extends [mscorlib]System.Object
+{
+  .field public static int32 Global_Guard_verifyUsr_ON
+  .field public static int32 Global_Disable_Track
+  .method public hidebysig static void  ChatpreLevel1(class [mscorlib]System.IO.TextWriter textWriter) cil managed
+  {
+    // 代码大小       377 (0x179)
+    .maxstack  4
+    .locals init ([0] string path,
+             [1] class [mscorlib]System.IO.FileStream 'stream',
+             [2] class [mscorlib]System.IO.StreamReader reader,
+             [3] string content,
+             [4] class [mscorlib]System.Exception ex,
+             [5] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  ldc.i4.0
+    IL_000a:  ceq
+    IL_000c:  stloc.s    CS$4$0000
+    IL_000e:  ldloc.s    CS$4$0000
+    IL_0010:  brtrue     IL_00b2
+
+    IL_0015:  nop
+    IL_0016:  ldsfld     string a3::q
+    IL_001b:  ldstr      "Site\\chatpreLevelOne.js"
+    IL_0020:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0025:  stloc.0
+    IL_0026:  ldloc.0
+    IL_0027:  call       bool [mscorlib]System.IO.File::Exists(string)
+    IL_002c:  ldc.i4.0
+    IL_002d:  ceq
+    IL_002f:  stloc.s    CS$4$0000
+    IL_0031:  ldloc.s    CS$4$0000
+    IL_0033:  brtrue.s   IL_00ac
+
+    IL_0035:  nop
+    .try
+    {
+      IL_0036:  nop
+      IL_0037:  ldloc.0
+      IL_0038:  ldc.i4.3
+      IL_0039:  ldc.i4.1
+      IL_003a:  ldc.i4.3
+      IL_003b:  call       class [mscorlib]System.IO.FileStream [mscorlib]System.IO.File::Open(string,
+                                                                                               valuetype [mscorlib]System.IO.FileMode,
+                                                                                               valuetype [mscorlib]System.IO.FileAccess,
+                                                                                               valuetype [mscorlib]System.IO.FileShare)
+      IL_0040:  stloc.1
+      .try
+      {
+        IL_0041:  nop
+        IL_0042:  ldloc.1
+        IL_0043:  call       class [mscorlib]System.Text.Encoding [mscorlib]System.Text.Encoding::get_UTF8()
+        IL_0048:  newobj     instance void [mscorlib]System.IO.StreamReader::.ctor(class [mscorlib]System.IO.Stream,
+                                                                                   class [mscorlib]System.Text.Encoding)
+        IL_004d:  stloc.2
+        .try
+        {
+          IL_004e:  nop
+          IL_004f:  ldloc.2
+          IL_0050:  callvirt   instance string [mscorlib]System.IO.TextReader::ReadToEnd()
+          IL_0055:  stloc.3
+          IL_0056:  ldarg.0
+          IL_0057:  ldloc.3
+          IL_0058:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+          IL_005d:  nop
+          IL_005e:  nop
+          IL_005f:  leave.s    IL_0073
+
+        }  // end .try
+        finally
+        {
+          IL_0061:  ldloc.2
+          IL_0062:  ldnull
+          IL_0063:  ceq
+          IL_0065:  stloc.s    CS$4$0000
+          IL_0067:  ldloc.s    CS$4$0000
+          IL_0069:  brtrue.s   IL_0072
+
+          IL_006b:  ldloc.2
+          IL_006c:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+          IL_0071:  nop
+          IL_0072:  endfinally
+        }  // end handler
+        IL_0073:  nop
+        IL_0074:  nop
+        IL_0075:  leave.s    IL_0089
+
+      }  // end .try
+      finally
+      {
+        IL_0077:  ldloc.1
+        IL_0078:  ldnull
+        IL_0079:  ceq
+        IL_007b:  stloc.s    CS$4$0000
+        IL_007d:  ldloc.s    CS$4$0000
+        IL_007f:  brtrue.s   IL_0088
+
+        IL_0081:  ldloc.1
+        IL_0082:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+        IL_0087:  nop
+        IL_0088:  endfinally
+      }  // end handler
+      IL_0089:  nop
+      IL_008a:  nop
+      IL_008b:  leave.s    IL_00aa
+
+    }  // end .try
+    catch [mscorlib]System.Exception 
+    {
+      IL_008d:  stloc.s    ex
+      IL_008f:  nop
+      IL_0090:  ldstr      "gsPublic->ChatpreLevel1:"
+      IL_0095:  ldloc.s    ex
+      IL_0097:  callvirt   instance string [mscorlib]System.Object::ToString()
+      IL_009c:  call       string [mscorlib]System.String::Concat(string,
+                                                                  string)
+      IL_00a1:  call       void e::b(string)
+      IL_00a6:  nop
+      IL_00a7:  nop
+      IL_00a8:  leave.s    IL_00aa
+
+    }  // end handler
+    IL_00aa:  nop
+    IL_00ab:  nop
+    IL_00ac:  nop
+    IL_00ad:  br         IL_0178
+
+    IL_00b2:  nop
+    IL_00b3:  ldarg.0
+    IL_00b4:  ldstr      "function LastFunction()"
+    IL_00b9:  ldsfld     string a8::a
+    IL_00be:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_00c3:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_00c8:  nop
+    IL_00c9:  ldarg.0
+    IL_00ca:  ldstr      "{"
+    IL_00cf:  ldsfld     string a8::a
+    IL_00d4:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_00d9:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_00de:  nop
+    IL_00df:  ldarg.0
+    IL_00e0:  ldsfld     string a8::b
+    IL_00e5:  ldstr      "if (skid!='' && skid!=null)"
+    IL_00ea:  ldsfld     string a8::a
+    IL_00ef:  call       string [mscorlib]System.String::Concat(string,
+                                                                string,
+                                                                string)
+    IL_00f4:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_00f9:  nop
+    IL_00fa:  ldarg.0
+    IL_00fb:  ldsfld     string a8::b
+    IL_0100:  ldstr      "{"
+    IL_0105:  ldsfld     string a8::a
+    IL_010a:  call       string [mscorlib]System.String::Concat(string,
+                                                                string,
+                                                                string)
+    IL_010f:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_0114:  nop
+    IL_0115:  ldarg.0
+    IL_0116:  ldsfld     string a8::b
+    IL_011b:  ldstr      "chatwordsFrame.testclick(skid,sk);"
+    IL_0120:  ldsfld     string a8::a
+    IL_0125:  call       string [mscorlib]System.String::Concat(string,
+                                                                string,
+                                                                string)
+    IL_012a:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_012f:  nop
+    IL_0130:  ldarg.0
+    IL_0131:  ldsfld     string a8::b
+    IL_0136:  ldstr      "}"
+    IL_013b:  ldsfld     string a8::a
+    IL_0140:  call       string [mscorlib]System.String::Concat(string,
+                                                                string,
+                                                                string)
+    IL_0145:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_014a:  nop
+    IL_014b:  ldarg.0
+    IL_014c:  ldstr      "LastFunction3();"
+    IL_0151:  ldsfld     string a8::a
+    IL_0156:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_015b:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_0160:  nop
+    IL_0161:  ldarg.0
+    IL_0162:  ldstr      "}"
+    IL_0167:  ldsfld     string a8::a
+    IL_016c:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0171:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_0176:  nop
+    IL_0177:  nop
+    IL_0178:  ret
+  } // end of method gsPublic::ChatpreLevel1
+
+  .method public hidebysig static void  OnlineLevel1(class [mscorlib]System.IO.TextWriter textWriter) cil managed
+  {
+    // 代码大小       2 (0x2)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  ret
+  } // end of method gsPublic::OnlineLevel1
+
+  .method public hidebysig static void  ManagerLogin() cil managed
+  {
+    // 代码大小       573 (0x23d)
+    .maxstack  4
+    .locals init ([0] string username,
+             [1] string password,
+             [2] string swtID,
+             [3] string swtSiteID,
+             [4] class bn bn,
+             [5] class [System.Data]System.Data.DataTable table,
+             [6] class [System.Data]System.Data.DataRow row2,
+             [7] string desEn,
+             [8] class [mscorlib]System.Exception ex,
+             [9] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0006:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_000b:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0010:  ldstr      "username"
+    IL_0015:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_001a:  stloc.0
+    IL_001b:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0020:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_0025:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_002a:  ldstr      "password"
+    IL_002f:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_0034:  stloc.1
+    IL_0035:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_003a:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_003f:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0044:  ldstr      "id"
+    IL_0049:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_004e:  stloc.2
+    IL_004f:  ldloc.2
+    IL_0050:  ldc.i4.3
+    IL_0051:  ldloc.2
+    IL_0052:  callvirt   instance int32 [mscorlib]System.String::get_Length()
+    IL_0057:  ldc.i4.3
+    IL_0058:  sub
+    IL_0059:  callvirt   instance string [mscorlib]System.String::Substring(int32,
+                                                                            int32)
+    IL_005e:  stloc.3
+    IL_005f:  ldloc.0
+    IL_0060:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0065:  brtrue.s   IL_0072
+
+    IL_0067:  ldloc.1
+    IL_0068:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_006d:  ldc.i4.0
+    IL_006e:  ceq
+    IL_0070:  br.s       IL_0073
+
+    IL_0072:  ldc.i4.0
+    IL_0073:  nop
+    IL_0074:  stloc.s    CS$4$0000
+    IL_0076:  ldloc.s    CS$4$0000
+    IL_0078:  brtrue.s   IL_0090
+
+    IL_007a:  nop
+    IL_007b:  ldstr      bytearray (28 75 37 62 0D 54 16 62 05 80 C6 5B 01 78 0D 4E   // (u7b.T.b...[.x.N
+                                    FD 80 3A 4E 7A 7A )                               // ..:Nzz
+    IL_0080:  ldstr      "login.html"
+    IL_0085:  call       void gsPublic::Alert(string,
+                                              string)
+    IL_008a:  nop
+    IL_008b:  br         IL_023b
+
+    IL_0090:  ldloc.3
+    IL_0091:  call       class bn aq::x(string)
+    IL_0096:  stloc.s    bn
+    IL_0098:  ldloc.s    bn
+    IL_009a:  ldnull
+    IL_009b:  ceq
+    IL_009d:  ldc.i4.0
+    IL_009e:  ceq
+    IL_00a0:  stloc.s    CS$4$0000
+    IL_00a2:  ldloc.s    CS$4$0000
+    IL_00a4:  brtrue.s   IL_00bc
+
+    IL_00a6:  nop
+    IL_00a7:  ldstr      bytearray (D9 7A B9 70 19 95 EF 8B )                         // .z.p....
+    IL_00ac:  ldstr      "login.html"
+    IL_00b1:  call       void gsPublic::Alert(string,
+                                              string)
+    IL_00b6:  nop
+    IL_00b7:  br         IL_023b
+
+    .try
+    {
+      .try
+      {
+        IL_00bc:  nop
+        IL_00bd:  ldloc.s    bn
+        IL_00bf:  call       void [mscorlib]System.Threading.Monitor::Enter(object)
+        IL_00c4:  nop
+        IL_00c5:  ldloc.s    bn
+        IL_00c7:  callvirt   instance class [System.Data]System.Data.DataTableCollection bn::w()
+        IL_00cc:  ldstr      "Operators"
+        IL_00d1:  callvirt   instance class [System.Data]System.Data.DataTable [System.Data]System.Data.DataTableCollection::get_Item(string)
+        IL_00d6:  stloc.s    table
+        IL_00d8:  ldloc.s    table
+        IL_00da:  callvirt   instance class [System.Data]System.Data.DataRowCollection [System.Data]System.Data.DataTable::get_Rows()
+        IL_00df:  ldloc.0
+        IL_00e0:  callvirt   instance class [System.Data]System.Data.DataRow [System.Data]System.Data.DataRowCollection::Find(object)
+        IL_00e5:  stloc.s    row2
+        IL_00e7:  ldloc.s    row2
+        IL_00e9:  ldnull
+        IL_00ea:  ceq
+        IL_00ec:  ldc.i4.0
+        IL_00ed:  ceq
+        IL_00ef:  stloc.s    CS$4$0000
+        IL_00f1:  ldloc.s    CS$4$0000
+        IL_00f3:  brtrue.s   IL_010b
+
+        IL_00f5:  nop
+        IL_00f6:  ldstr      bytearray (A1 7B 06 74 0D 54 F0 79 16 62 05 80 C6 5B 01 78   // .{.t.T.y.b...[.x
+                                        0D 4E 63 6B 6E 78 31 00 )                         // .Ncknx1.
+        IL_00fb:  ldstr      "login.html"
+        IL_0100:  call       void gsPublic::Alert(string,
+                                                  string)
+        IL_0105:  nop
+        IL_0106:  leave      IL_023b
+
+        IL_010b:  ldloc.1
+        IL_010c:  ldloc.3
+        IL_010d:  call       string cccc::a(string,
+                                            string)
+        IL_0112:  stloc.s    desEn
+        IL_0114:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_0119:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+        IL_011e:  ldloc.1
+        IL_011f:  ldstr      "\r\n"
+        IL_0124:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_0129:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+        IL_012e:  nop
+        IL_012f:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_0134:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+        IL_0139:  ldloc.3
+        IL_013a:  ldstr      "\r\n"
+        IL_013f:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_0144:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+        IL_0149:  nop
+        IL_014a:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_014f:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+        IL_0154:  ldloc.s    desEn
+        IL_0156:  ldstr      "\r\n"
+        IL_015b:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_0160:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+        IL_0165:  nop
+        IL_0166:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_016b:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+        IL_0170:  ldloc.s    row2
+        IL_0172:  ldstr      "password"
+        IL_0177:  callvirt   instance object [System.Data]System.Data.DataRow::get_Item(string)
+        IL_017c:  callvirt   instance string [mscorlib]System.Object::ToString()
+        IL_0181:  ldstr      "\r\n"
+        IL_0186:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_018b:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+        IL_0190:  nop
+        IL_0191:  ldloc.s    desEn
+        IL_0193:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+        IL_0198:  brtrue.s   IL_01b7
+
+        IL_019a:  ldloc.s    desEn
+        IL_019c:  ldloc.s    row2
+        IL_019e:  ldstr      "password"
+        IL_01a3:  callvirt   instance object [System.Data]System.Data.DataRow::get_Item(string)
+        IL_01a8:  callvirt   instance string [mscorlib]System.Object::ToString()
+        IL_01ad:  call       bool [mscorlib]System.String::op_Inequality(string,
+                                                                         string)
+        IL_01b2:  ldc.i4.0
+        IL_01b3:  ceq
+        IL_01b5:  br.s       IL_01b8
+
+        IL_01b7:  ldc.i4.0
+        IL_01b8:  nop
+        IL_01b9:  stloc.s    CS$4$0000
+        IL_01bb:  ldloc.s    CS$4$0000
+        IL_01bd:  brtrue.s   IL_01d1
+
+        IL_01bf:  nop
+        IL_01c0:  ldstr      bytearray (A1 7B 06 74 0D 54 F0 79 16 62 05 80 C6 5B 01 78   // .{.t.T.y.b...[.x
+                                        0D 4E 63 6B 6E 78 32 00 )                         // .Ncknx2.
+        IL_01c5:  ldstr      "login.html"
+        IL_01ca:  call       void gsPublic::Alert(string,
+                                                  string)
+        IL_01cf:  nop
+        IL_01d0:  nop
+        IL_01d1:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_01d6:  callvirt   instance class [System.Web]System.Web.SessionState.HttpSessionState [System.Web]System.Web.HttpContext::get_Session()
+        IL_01db:  ldstr      "siteid"
+        IL_01e0:  ldloc.2
+        IL_01e1:  callvirt   instance void [System.Web]System.Web.SessionState.HttpSessionState::set_Item(string,
+                                                                                                          object)
+        IL_01e6:  nop
+        IL_01e7:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+        IL_01ec:  callvirt   instance class [System.Web]System.Web.SessionState.HttpSessionState [System.Web]System.Web.HttpContext::get_Session()
+        IL_01f1:  ldstr      "username"
+        IL_01f6:  ldloc.0
+        IL_01f7:  callvirt   instance void [System.Web]System.Web.SessionState.HttpSessionState::set_Item(string,
+                                                                                                          object)
+        IL_01fc:  nop
+        IL_01fd:  ldstr      bytearray (7B 76 55 5F 10 62 9F 52 )                         // {vU_.b.R
+        IL_0202:  ldstr      "bhSecurity.aspx"
+        IL_0207:  call       void gsPublic::Alert(string,
+                                                  string)
+        IL_020c:  nop
+        IL_020d:  leave.s    IL_023b
+
+      }  // end .try
+      catch [mscorlib]System.Exception 
+      {
+        IL_020f:  stloc.s    ex
+        IL_0211:  nop
+        IL_0212:  ldstr      "ManagerLogin: "
+        IL_0217:  ldloc.s    ex
+        IL_0219:  callvirt   instance string [mscorlib]System.Object::ToString()
+        IL_021e:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_0223:  call       void e::b(string)
+        IL_0228:  nop
+        IL_0229:  nop
+        IL_022a:  leave.s    IL_022c
+
+      }  // end handler
+      IL_022c:  nop
+      IL_022d:  leave.s    IL_023a
+
+    }  // end .try
+    finally
+    {
+      IL_022f:  nop
+      IL_0230:  ldloc.s    bn
+      IL_0232:  call       void [mscorlib]System.Threading.Monitor::Exit(object)
+      IL_0237:  nop
+      IL_0238:  nop
+      IL_0239:  endfinally
+    }  // end handler
+    IL_023a:  nop
+    IL_023b:  nop
+    IL_023c:  ret
+  } // end of method gsPublic::ManagerLogin
+
+  .method public hidebysig static void  MangerOpt() cil managed
+  {
+    // 代码大小       285 (0x11d)
+    .maxstack  2
+    .locals init ([0] string 'opt',
+             [1] string track,
+             [2] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0006:  callvirt   instance class [System.Web]System.Web.SessionState.HttpSessionState [System.Web]System.Web.HttpContext::get_Session()
+    IL_000b:  ldstr      "username"
+    IL_0010:  callvirt   instance object [System.Web]System.Web.SessionState.HttpSessionState::get_Item(string)
+    IL_0015:  ldnull
+    IL_0016:  ceq
+    IL_0018:  stloc.2
+    IL_0019:  ldloc.2
+    IL_001a:  brtrue.s   IL_0032
+
+    IL_001c:  nop
+    IL_001d:  ldstr      bytearray (7B 76 55 5F C7 8F 1F 67 )                         // {vU_...g
+    IL_0022:  ldstr      "login.html"
+    IL_0027:  call       void gsPublic::Alert(string,
+                                              string)
+    IL_002c:  nop
+    IL_002d:  br         IL_011c
+
+    IL_0032:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0037:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_003c:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0041:  ldstr      "opt"
+    IL_0046:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_004b:  stloc.0
+    IL_004c:  ldloc.0
+    IL_004d:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0052:  ldc.i4.0
+    IL_0053:  ceq
+    IL_0055:  stloc.2
+    IL_0056:  ldloc.2
+    IL_0057:  brtrue.s   IL_0063
+
+    IL_0059:  nop
+    IL_005a:  ldc.i4.0
+    IL_005b:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_0060:  nop
+    IL_0061:  br.s       IL_00a3
+
+    IL_0063:  ldloc.0
+    IL_0064:  ldstr      "level1"
+    IL_0069:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_006e:  ldc.i4.0
+    IL_006f:  ceq
+    IL_0071:  stloc.2
+    IL_0072:  ldloc.2
+    IL_0073:  brtrue.s   IL_007f
+
+    IL_0075:  nop
+    IL_0076:  ldc.i4.1
+    IL_0077:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_007c:  nop
+    IL_007d:  br.s       IL_00a3
+
+    IL_007f:  ldloc.0
+    IL_0080:  ldstr      "level2"
+    IL_0085:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_008a:  ldc.i4.0
+    IL_008b:  ceq
+    IL_008d:  stloc.2
+    IL_008e:  ldloc.2
+    IL_008f:  brtrue.s   IL_009b
+
+    IL_0091:  nop
+    IL_0092:  ldc.i4.1
+    IL_0093:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_0098:  nop
+    IL_0099:  br.s       IL_00a3
+
+    IL_009b:  nop
+    IL_009c:  ldc.i4.0
+    IL_009d:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00a2:  nop
+    IL_00a3:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_00a8:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_00ad:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_00b2:  ldstr      "track"
+    IL_00b7:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_00bc:  stloc.1
+    IL_00bd:  ldloc.1
+    IL_00be:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_00c3:  ldc.i4.0
+    IL_00c4:  ceq
+    IL_00c6:  stloc.2
+    IL_00c7:  ldloc.2
+    IL_00c8:  brtrue.s   IL_00d4
+
+    IL_00ca:  nop
+    IL_00cb:  ldc.i4.0
+    IL_00cc:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_00d1:  nop
+    IL_00d2:  br.s       IL_010a
+
+    IL_00d4:  ldloc.1
+    IL_00d5:  ldstr      "off"
+    IL_00da:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_00df:  ldc.i4.0
+    IL_00e0:  ceq
+    IL_00e2:  stloc.2
+    IL_00e3:  ldloc.2
+    IL_00e4:  brtrue.s   IL_00f0
+
+    IL_00e6:  nop
+    IL_00e7:  ldc.i4.0
+    IL_00e8:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_00ed:  nop
+    IL_00ee:  br.s       IL_010a
+
+    IL_00f0:  ldloc.1
+    IL_00f1:  ldstr      "on"
+    IL_00f6:  call       bool [mscorlib]System.String::op_Equality(string,
+                                                                   string)
+    IL_00fb:  ldc.i4.0
+    IL_00fc:  ceq
+    IL_00fe:  stloc.2
+    IL_00ff:  ldloc.2
+    IL_0100:  brtrue.s   IL_010a
+
+    IL_0102:  nop
+    IL_0103:  ldc.i4.1
+    IL_0104:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_0109:  nop
+    IL_010a:  ldstr      bytearray (EE 4F 39 65 10 62 9F 52 )                         // .O9e.b.R
+    IL_010f:  ldstr      "bhSecurity.aspx"
+    IL_0114:  call       void gsPublic::Alert(string,
+                                              string)
+    IL_0119:  nop
+    IL_011a:  br.s       IL_011c
+
+    IL_011c:  ret
+  } // end of method gsPublic::MangerOpt
+
+  .method private hidebysig static void  Alert(string str,
+                                               string redirect) cil managed
+  {
+    // 代码大小       79 (0x4f)
+    .maxstack  4
+    .locals init ([0] string[] CS$0$0000)
+    IL_0000:  nop
+    IL_0001:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0006:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_000b:  ldc.i4.5
+    IL_000c:  newarr     [mscorlib]System.String
+    IL_0011:  stloc.0
+    IL_0012:  ldloc.0
+    IL_0013:  ldc.i4.0
+    IL_0014:  ldstr      "<script>alert('"
+    IL_0019:  stelem.ref
+    IL_001a:  ldloc.0
+    IL_001b:  ldc.i4.1
+    IL_001c:  ldarg.0
+    IL_001d:  stelem.ref
+    IL_001e:  ldloc.0
+    IL_001f:  ldc.i4.2
+    IL_0020:  ldstr      "');window.location='"
+    IL_0025:  stelem.ref
+    IL_0026:  ldloc.0
+    IL_0027:  ldc.i4.3
+    IL_0028:  ldarg.1
+    IL_0029:  stelem.ref
+    IL_002a:  ldloc.0
+    IL_002b:  ldc.i4.4
+    IL_002c:  ldstr      "';</script>"
+    IL_0031:  stelem.ref
+    IL_0032:  ldloc.0
+    IL_0033:  call       string [mscorlib]System.String::Concat(string[])
+    IL_0038:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_003d:  nop
+    IL_003e:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0043:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_0048:  callvirt   instance void [System.Web]System.Web.HttpResponse::End()
+    IL_004d:  nop
+    IL_004e:  ret
+  } // end of method gsPublic::Alert
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method gsPublic::.ctor
+
+  .method private hidebysig specialname rtspecialname static 
+          void  .cctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldc.i4.1
+    IL_0001:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_0006:  ret
+  } // end of method gsPublic::.cctor
+
+} // end of class gsPublic
+
+.class public auto ansi beforefieldinit h
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static string 
+          a(string A_0,
+            bool A_1) cil managed
+  {
+    // 代码大小       11 (0xb)
+    .maxstack  1
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldstr      ""
+    IL_0006:  stloc.0
+    IL_0007:  br.s       IL_0009
+
+    IL_0009:  ldloc.0
+    IL_000a:  ret
+  } // end of method h::a
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method h::.ctor
+
+} // end of class h
+
+.class public auto ansi beforefieldinit j
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  writeConfirmCode(class [mscorlib]System.IO.TextWriter textWriter) cil managed
+  {
+    // 代码大小       47 (0x2f)
+    .maxstack  2
+    .locals init ([0] bool CS$4$0000)
+    IL_0000:  nop
+    IL_0001:  ldsfld     int32 a3::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  ceq
+    IL_0009:  ldc.i4.0
+    IL_000a:  ceq
+    IL_000c:  stloc.0
+    IL_000d:  ldloc.0
+    IL_000e:  brtrue.s   IL_0020
+
+    IL_0010:  nop
+    IL_0011:  ldarg.0
+    IL_0012:  ldstr      "try{if(obj1.addEventListener){obj1.addEventListene"
+    + "r('mousemove',LR_on_MoveEvent,false);obj1.addEventListener('click',LR_o"
+    + "n_ClickEvent,false)}else if(obj1.attachEvent){obj1.attachEvent('onmouse"
+    + "move',LR_on_MoveEvent);obj1.attachEvent('onclick',LR_on_ClickEvent)}}ca"
+    + "tch(e){}}else{var TextBox1_editor_obj=LR_GetObj('TextBox1_editor');try{"
+    + "if(TextBox1_editor_obj.addEventListener){TextBox1_editor_obj.addEventLi"
+    + "stener('mousemove',LR_on_MoveEvent1,false);TextBox1_editor_obj.addEvent"
+    + "Listener('click',LR_on_ClickEvent1,false)}else if(TextBox1_editor_obj.a"
+    + "ttachEvent){TextBox1_editor_obj.attachEvent('onmousemove',LR_on_MoveEve"
+    + "nt1);TextBox1_editor_obj.attachEvent('onclick',LR_on_ClickEvent1)}}catc"
+    + "h(e){}}var LR_Eventx=null;var LR_EventClick=null;function LR_removeHand"
+    + "ler(element,type,handler){if(element.removeEventListener){element.remov"
+    + "eEventListener(type,handler,false)}else if(element.detachEvent){element"
+    + ".detachEvent('on'+type,handler)}else{element['on'+type]=null}}function "
+    + "LR_getPageX(evt){var result=evt.pageX,doc=obj1;if(!result&&result!==0){"
+    + "result=(evt.clientX||0)+(doc.documentElement.scrollLeft||doc.body.scrol"
+    + "lLeft)}return result}function LR_getPageX1(evt){var result=evt.pageX,do"
+    + "c=document;if(!result&&result!==0){result=(evt.clientX||0)+(doc.documen"
+    + "tElement.scrollLeft||doc.body.scrollLeft)}return result}function LR_on_"
+    + "MoveEvent(evt){evt=evt||window.event;LR_Eventx=LR_getPageX(evt);LR_remo"
+    + "veHandler(obj1,'mousemove',LR_on_MoveEvent)}function LR_on_ClickEvent(e"
+    + "vt){evt=evt||window.event;LR_EventClick=true;LR_removeHandler(obj1,'cli"
+    + "ck',LR_on_ClickEvent)}function LR_on_MoveEvent1(evt){evt=evt||window.ev"
+    + "ent;LR_Eventx=LR_getPageX1(evt);LR_removeHandler(LR_GetObj('TextBox1_ed"
+    + "itor'),'mousemove',LR_on_MoveEvent1)}function LR_on_ClickEvent1(evt){ev"
+    + "t=evt||window.event;LR_EventClick=true;LR_removeHandler(LR_GetObj('Text"
+    + "Box1_editor'),'click',LR_on_ClickEvent1)}function LR_hcloopJS_1(url,par"
+    + "am){var me=arguments.callee;var src=url.indexOf('\?')=='-1'\?url+'\?':url;"
+    + "src+=param+'&d='+new Date().getTime();me.Script&&me.Script.parentNode.r"
+    + "emoveChild(me.Script);me.Script=document.createElement('script');me.Scr"
+    + "ipt.setAttribute('type','text/javascript');me.Script.src=src;document.g"
+    + "etElementsByTagName('head')[0].appendChild(me.Script)}function getWindo"
+    + "wWidth(){var windowWidth=0;if(typeof(window.innerWidth)=='number'){wind"
+    + "owWidth=window.innerWidth}else{if(document.documentElement&&document.do"
+    + "cumentElement.clientWidth){windowWidth=document.documentElement.clientW"
+    + "idth}else{if(document.body&&document.body.clientWidth){windowWidth=docu"
+    + "ment.body.clientWidth}}}return windowWidth}function LR_sentConfirmUrl()"
+    + "{if(LR_Eventx==null||LR_EventClick==null||LR_cid==null||LR_cid==''){set"
+    + "Timeout('LR_sentConfirmUrl();',500);return}LR_hcloopJS_1(LR_sysurl+'js/"
+    + "JS_Confirm.aspx\?eventx='+LR_Eventx+'&clientx='+getWindowWidth()+'&id='+"
+    + "LR_siteid+'&sid='+LR_sid+'&cid='+LR_cid)}LR_sentConfirmUrl();"
+    IL_0017:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_001c:  nop
+    IL_001d:  nop
+    IL_001e:  br.s       IL_002e
+
+    IL_0020:  nop
+    IL_0021:  ldarg.0
+    IL_0022:  ldstr      "}"
+    IL_0027:  callvirt   instance void [mscorlib]System.IO.TextWriter::Write(string)
+    IL_002c:  nop
+    IL_002d:  nop
+    IL_002e:  ret
+  } // end of method j::writeConfirmCode
+
+  .method public hidebysig static void  test(class [mscorlib]System.IO.TextWriter textWriter) cil managed
+  {
+    // 代码大小       9 (0x9)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  ldarg.0
+    IL_0002:  call       void gsPublic::ChatpreLevel1(class [mscorlib]System.IO.TextWriter)
+    IL_0007:  nop
+    IL_0008:  ret
+  } // end of method j::test
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method j::.ctor
+
+} // end of class j
+
+.class public auto ansi beforefieldinit LRServer_test.LiveWeb.OC.DefendSetting
+       extends [System.Web]System.Web.UI.Page
+{
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       10 (0xa)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System.Web]System.Web.UI.Page::.ctor()
+    IL_0006:  nop
+    IL_0007:  nop
+    IL_0008:  nop
+    IL_0009:  ret
+  } // end of method DefendSetting::.ctor
+
+  .method family hidebysig instance void 
+          Page_Load(object sender,
+                    class [mscorlib]System.EventArgs e) cil managed
+  {
+    // 代码大小       8 (0x8)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  call       void b7::swtDefendSetting()
+    IL_0006:  nop
+    IL_0007:  ret
+  } // end of method DefendSetting::Page_Load
+
+} // end of class LRServer_test.LiveWeb.OC.DefendSetting
+
+.class public auto ansi beforefieldinit LiveWeb.OC.DelSiteID
+       extends [System.Web]System.Web.UI.Page
+{
+  .method family hidebysig instance void 
+          Page_Load(object sender,
+                    class [mscorlib]System.EventArgs e) cil managed
+  {
+    // 代码大小       8 (0x8)
+    .maxstack  8
+    IL_0000:  nop
+    IL_0001:  call       void cd::x()
+    IL_0006:  nop
+    IL_0007:  ret
+  } // end of method DelSiteID::Page_Load
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [System.Web]System.Web.UI.Page::.ctor()
+    IL_0006:  ret
+  } // end of method DelSiteID::.ctor
+
+} // end of class LiveWeb.OC.DelSiteID
+
+
+// =============================================================
+
+// *********** 反汇编完成 ***********************
+// 警告: 创建了 Win32 资源文件 E:\diskF\swtserver\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.res

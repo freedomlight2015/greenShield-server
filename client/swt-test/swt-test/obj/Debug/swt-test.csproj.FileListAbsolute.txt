@@ -1,0 +1,5 @@
+F:\swt\swt-test\swt-test\obj\Debug\swt-test.csprojResolveAssemblyReference.cache
+F:\swt\swt-test\swt-test\bin\Debug\swt-test.dll
+F:\swt\swt-test\swt-test\bin\Debug\swt-test.pdb
+F:\swt\swt-test\swt-test\obj\Debug\swt-test.dll
+F:\swt\swt-test\swt-test\obj\Debug\swt-test.pdb
