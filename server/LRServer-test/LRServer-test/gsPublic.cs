@@ -58,9 +58,37 @@ using System.Web;
         /// 防护1->在线访客是否真实用户
         /// </summary>
         /// <param name="textWriter"></param>
-        public static void OnlineLevel1(System.IO.TextWriter textWriter)
+        public static void OnlineLevel()
         {
-
+            if (gsPublic.Global_Guard_verifyUsr_ON == 1 && Global_Disable_Track == 0)
+            {
+                string path = a3.q + @"Site\OnlineLevelOne.js";
+                if (File.Exists(path))
+                {
+                    try
+                    {
+                        using (FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                        {
+                            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+                            {
+                                string content = reader.ReadToEnd();
+                                HttpContext.Current.Response.Write(content);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        e.b("gsPublic->OnlineLevel:" + ex.ToString());
+                    }
+                }
+            }
+            else
+            {
+                HttpContext.Current.Response.Write("function LR_addnew0()" + a8.a);
+                HttpContext.Current.Response.Write("{" + a8.a);
+                HttpContext.Current.Response.Write("LR_addnew_dest();" + a8.a);
+                HttpContext.Current.Response.Write("}" + a8.a);
+            }
         }
         /// <summary>
         /// 管理页面
@@ -126,37 +154,38 @@ using System.Web;
                 Alert("请先登录", "login.html");
             }
             string opt = HttpContext.Current.Request.Form["opt"];
-            if (string.IsNullOrEmpty(opt))
-            {
-                gsPublic.Global_Guard_verifyUsr_ON = 0;
-            }
-            else if (opt == "level1")
-            {
-                gsPublic.Global_Guard_verifyUsr_ON = 1;
-            }
-            else if (opt == "level2")
-            {
-                gsPublic.Global_Guard_verifyUsr_ON = 1;
-            }
-            else
-            {
-                gsPublic.Global_Guard_verifyUsr_ON = 0;
-            }
             string track = HttpContext.Current.Request.Form["track"];
-            if (string.IsNullOrEmpty(track))
+            if (!string.IsNullOrEmpty(opt) || !string.IsNullOrEmpty(track))
             {
-                gsPublic.Global_Disable_Track = 0;
+                if (!string.IsNullOrEmpty(opt))
+                {
+                    if (opt == "level1")
+                    {
+                        gsPublic.Global_Guard_verifyUsr_ON = 1;
+                    }
+                    else if (opt == "level2")
+                    {
+                        gsPublic.Global_Guard_verifyUsr_ON = 1;
+                    }
+                    else
+                    {
+                        gsPublic.Global_Guard_verifyUsr_ON = 0;
+                    }
+                }
+                
+                if (!string.IsNullOrEmpty(track))
+                {
+                    if (track == "off")
+                    {
+                        gsPublic.Global_Disable_Track = 0;
+                    }
+                    else if (track == "on")
+                    {
+                        gsPublic.Global_Disable_Track = 1;
+                    }
+                }
+                Alert("修改成功", "bhSecurity.aspx");
             }
-            else if (track == "off")
-            {
-                gsPublic.Global_Disable_Track = 0;
-            }
-            else if (track == "on")
-            {
-                gsPublic.Global_Disable_Track = 1;
-            }
-            Alert("修改成功","bhSecurity.aspx");
-            return;
  
         }
         private static void Alert(string str,string redirect)

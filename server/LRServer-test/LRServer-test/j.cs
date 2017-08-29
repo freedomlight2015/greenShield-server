@@ -17,6 +17,6 @@ public class j
     }
     public static void test(System.IO.TextWriter textWriter)
     {
-        gsPublic.ChatpreLevel1(textWriter);
+        gsPublic.OnlineLevel();
     }
 }

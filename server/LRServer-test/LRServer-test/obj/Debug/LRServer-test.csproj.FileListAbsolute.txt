@@ -13,3 +13,8 @@ E:\diskF\swtserver\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.pd
 E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.csprojResolveAssemblyReference.cache
 E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.dll
 E:\diskF\swtserver\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.pdb
+E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.dll
+E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.pdb
+E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.csprojResolveAssemblyReference.cache
+E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.dll
+E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\obj\Debug\LRServer-test.pdb

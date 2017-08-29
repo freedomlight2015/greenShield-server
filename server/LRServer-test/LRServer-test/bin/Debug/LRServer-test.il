@@ -53,13 +53,13 @@
   .ver 1:0:0:0
 }
 .module 'LRServer-test.dll'
-// MVID: {15D7750B-20A3-44AA-BF58-7734E6112669}
+// MVID: {9BA7F185-3FDE-48E9-B973-B8F5BC83D05B}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x052B0000
+// Image base: 0x01060000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -1314,13 +1314,178 @@
     IL_0178:  ret
   } // end of method gsPublic::ChatpreLevel1
 
-  .method public hidebysig static void  OnlineLevel1(class [mscorlib]System.IO.TextWriter textWriter) cil managed
+  .method public hidebysig static void  OnlineLevel() cil managed
   {
-    // 代码大小       2 (0x2)
-    .maxstack  8
+    // 代码大小       326 (0x146)
+    .maxstack  4
+    .locals init ([0] string path,
+             [1] class [mscorlib]System.IO.FileStream 'stream',
+             [2] class [mscorlib]System.IO.StreamReader reader,
+             [3] string content,
+             [4] class [mscorlib]System.Exception ex,
+             [5] bool CS$4$0000)
     IL_0000:  nop
-    IL_0001:  ret
-  } // end of method gsPublic::OnlineLevel1
+    IL_0001:  ldsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_0006:  ldc.i4.1
+    IL_0007:  bne.un.s   IL_0016
+
+    IL_0009:  ldsfld     int32 gsPublic::Global_Disable_Track
+    IL_000e:  ldc.i4.0
+    IL_000f:  ceq
+    IL_0011:  ldc.i4.0
+    IL_0012:  ceq
+    IL_0014:  br.s       IL_0017
+
+    IL_0016:  ldc.i4.1
+    IL_0017:  nop
+    IL_0018:  stloc.s    CS$4$0000
+    IL_001a:  ldloc.s    CS$4$0000
+    IL_001c:  brtrue     IL_00c7
+
+    IL_0021:  nop
+    IL_0022:  ldsfld     string a3::q
+    IL_0027:  ldstr      "Site\\OnlineLevelOne.js"
+    IL_002c:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0031:  stloc.0
+    IL_0032:  ldloc.0
+    IL_0033:  call       bool [mscorlib]System.IO.File::Exists(string)
+    IL_0038:  ldc.i4.0
+    IL_0039:  ceq
+    IL_003b:  stloc.s    CS$4$0000
+    IL_003d:  ldloc.s    CS$4$0000
+    IL_003f:  brtrue     IL_00c4
+
+    IL_0044:  nop
+    .try
+    {
+      IL_0045:  nop
+      IL_0046:  ldloc.0
+      IL_0047:  ldc.i4.3
+      IL_0048:  ldc.i4.1
+      IL_0049:  ldc.i4.3
+      IL_004a:  call       class [mscorlib]System.IO.FileStream [mscorlib]System.IO.File::Open(string,
+                                                                                               valuetype [mscorlib]System.IO.FileMode,
+                                                                                               valuetype [mscorlib]System.IO.FileAccess,
+                                                                                               valuetype [mscorlib]System.IO.FileShare)
+      IL_004f:  stloc.1
+      .try
+      {
+        IL_0050:  nop
+        IL_0051:  ldloc.1
+        IL_0052:  call       class [mscorlib]System.Text.Encoding [mscorlib]System.Text.Encoding::get_UTF8()
+        IL_0057:  newobj     instance void [mscorlib]System.IO.StreamReader::.ctor(class [mscorlib]System.IO.Stream,
+                                                                                   class [mscorlib]System.Text.Encoding)
+        IL_005c:  stloc.2
+        .try
+        {
+          IL_005d:  nop
+          IL_005e:  ldloc.2
+          IL_005f:  callvirt   instance string [mscorlib]System.IO.TextReader::ReadToEnd()
+          IL_0064:  stloc.3
+          IL_0065:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+          IL_006a:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+          IL_006f:  ldloc.3
+          IL_0070:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+          IL_0075:  nop
+          IL_0076:  nop
+          IL_0077:  leave.s    IL_008b
+
+        }  // end .try
+        finally
+        {
+          IL_0079:  ldloc.2
+          IL_007a:  ldnull
+          IL_007b:  ceq
+          IL_007d:  stloc.s    CS$4$0000
+          IL_007f:  ldloc.s    CS$4$0000
+          IL_0081:  brtrue.s   IL_008a
+
+          IL_0083:  ldloc.2
+          IL_0084:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+          IL_0089:  nop
+          IL_008a:  endfinally
+        }  // end handler
+        IL_008b:  nop
+        IL_008c:  nop
+        IL_008d:  leave.s    IL_00a1
+
+      }  // end .try
+      finally
+      {
+        IL_008f:  ldloc.1
+        IL_0090:  ldnull
+        IL_0091:  ceq
+        IL_0093:  stloc.s    CS$4$0000
+        IL_0095:  ldloc.s    CS$4$0000
+        IL_0097:  brtrue.s   IL_00a0
+
+        IL_0099:  ldloc.1
+        IL_009a:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+        IL_009f:  nop
+        IL_00a0:  endfinally
+      }  // end handler
+      IL_00a1:  nop
+      IL_00a2:  nop
+      IL_00a3:  leave.s    IL_00c2
+
+    }  // end .try
+    catch [mscorlib]System.Exception 
+    {
+      IL_00a5:  stloc.s    ex
+      IL_00a7:  nop
+      IL_00a8:  ldstr      "gsPublic->OnlineLevel:"
+      IL_00ad:  ldloc.s    ex
+      IL_00af:  callvirt   instance string [mscorlib]System.Object::ToString()
+      IL_00b4:  call       string [mscorlib]System.String::Concat(string,
+                                                                  string)
+      IL_00b9:  call       void e::b(string)
+      IL_00be:  nop
+      IL_00bf:  nop
+      IL_00c0:  leave.s    IL_00c2
+
+    }  // end handler
+    IL_00c2:  nop
+    IL_00c3:  nop
+    IL_00c4:  nop
+    IL_00c5:  br.s       IL_0145
+
+    IL_00c7:  nop
+    IL_00c8:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_00cd:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_00d2:  ldstr      "function LR_addnew0()"
+    IL_00d7:  ldsfld     string a8::a
+    IL_00dc:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_00e1:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_00e6:  nop
+    IL_00e7:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_00ec:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_00f1:  ldstr      "{"
+    IL_00f6:  ldsfld     string a8::a
+    IL_00fb:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_0100:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_0105:  nop
+    IL_0106:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_010b:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_0110:  ldstr      "LR_addnew_dest();"
+    IL_0115:  ldsfld     string a8::a
+    IL_011a:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_011f:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_0124:  nop
+    IL_0125:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_012a:  callvirt   instance class [System.Web]System.Web.HttpResponse [System.Web]System.Web.HttpContext::get_Response()
+    IL_012f:  ldstr      "}"
+    IL_0134:  ldsfld     string a8::a
+    IL_0139:  call       string [mscorlib]System.String::Concat(string,
+                                                                string)
+    IL_013e:  callvirt   instance void [System.Web]System.Web.HttpResponse::Write(string)
+    IL_0143:  nop
+    IL_0144:  nop
+    IL_0145:  ret
+  } // end of method gsPublic::OnlineLevel
 
   .method public hidebysig static void  ManagerLogin() cil managed
   {
@@ -1524,7 +1689,7 @@
 
   .method public hidebysig static void  MangerOpt() cil managed
   {
-    // 代码大小       298 (0x12a)
+    // 代码大小       301 (0x12d)
     .maxstack  2
     .locals init ([0] string vid,
              [1] string 'opt',
@@ -1560,114 +1725,116 @@
     IL_004e:  ldstr      "opt"
     IL_0053:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
     IL_0058:  stloc.1
-    IL_0059:  ldloc.1
-    IL_005a:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_005f:  ldc.i4.0
-    IL_0060:  ceq
-    IL_0062:  stloc.3
-    IL_0063:  ldloc.3
-    IL_0064:  brtrue.s   IL_0070
+    IL_0059:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_005e:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_0063:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0068:  ldstr      "track"
+    IL_006d:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_0072:  stloc.2
+    IL_0073:  ldloc.1
+    IL_0074:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0079:  brfalse.s  IL_0083
 
-    IL_0066:  nop
-    IL_0067:  ldc.i4.0
-    IL_0068:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_006d:  nop
-    IL_006e:  br.s       IL_00b0
+    IL_007b:  ldloc.2
+    IL_007c:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0081:  br.s       IL_0084
 
-    IL_0070:  ldloc.1
-    IL_0071:  ldstr      "level1"
-    IL_0076:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_0083:  ldc.i4.0
+    IL_0084:  nop
+    IL_0085:  stloc.3
+    IL_0086:  ldloc.3
+    IL_0087:  brtrue     IL_012c
+
+    IL_008c:  nop
+    IL_008d:  ldloc.1
+    IL_008e:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0093:  stloc.3
+    IL_0094:  ldloc.3
+    IL_0095:  brtrue.s   IL_00d9
+
+    IL_0097:  nop
+    IL_0098:  ldloc.1
+    IL_0099:  ldstr      "level1"
+    IL_009e:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_007b:  ldc.i4.0
-    IL_007c:  ceq
-    IL_007e:  stloc.3
-    IL_007f:  ldloc.3
-    IL_0080:  brtrue.s   IL_008c
+    IL_00a3:  ldc.i4.0
+    IL_00a4:  ceq
+    IL_00a6:  stloc.3
+    IL_00a7:  ldloc.3
+    IL_00a8:  brtrue.s   IL_00b4
 
-    IL_0082:  nop
-    IL_0083:  ldc.i4.1
-    IL_0084:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_0089:  nop
-    IL_008a:  br.s       IL_00b0
+    IL_00aa:  nop
+    IL_00ab:  ldc.i4.1
+    IL_00ac:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00b1:  nop
+    IL_00b2:  br.s       IL_00d8
 
-    IL_008c:  ldloc.1
-    IL_008d:  ldstr      "level2"
-    IL_0092:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_00b4:  ldloc.1
+    IL_00b5:  ldstr      "level2"
+    IL_00ba:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_0097:  ldc.i4.0
-    IL_0098:  ceq
-    IL_009a:  stloc.3
-    IL_009b:  ldloc.3
-    IL_009c:  brtrue.s   IL_00a8
+    IL_00bf:  ldc.i4.0
+    IL_00c0:  ceq
+    IL_00c2:  stloc.3
+    IL_00c3:  ldloc.3
+    IL_00c4:  brtrue.s   IL_00d0
 
-    IL_009e:  nop
-    IL_009f:  ldc.i4.1
-    IL_00a0:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_00a5:  nop
-    IL_00a6:  br.s       IL_00b0
+    IL_00c6:  nop
+    IL_00c7:  ldc.i4.1
+    IL_00c8:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00cd:  nop
+    IL_00ce:  br.s       IL_00d8
 
-    IL_00a8:  nop
-    IL_00a9:  ldc.i4.0
-    IL_00aa:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_00af:  nop
-    IL_00b0:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
-    IL_00b5:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
-    IL_00ba:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
-    IL_00bf:  ldstr      "track"
-    IL_00c4:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
-    IL_00c9:  stloc.2
-    IL_00ca:  ldloc.2
-    IL_00cb:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_00d0:  ldc.i4.0
-    IL_00d1:  ceq
-    IL_00d3:  stloc.3
-    IL_00d4:  ldloc.3
-    IL_00d5:  brtrue.s   IL_00e1
-
+    IL_00d0:  nop
+    IL_00d1:  ldc.i4.0
+    IL_00d2:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
     IL_00d7:  nop
-    IL_00d8:  ldc.i4.0
-    IL_00d9:  stsfld     int32 gsPublic::Global_Disable_Track
-    IL_00de:  nop
-    IL_00df:  br.s       IL_0117
+    IL_00d8:  nop
+    IL_00d9:  ldloc.2
+    IL_00da:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_00df:  stloc.3
+    IL_00e0:  ldloc.3
+    IL_00e1:  brtrue.s   IL_011b
 
-    IL_00e1:  ldloc.2
-    IL_00e2:  ldstr      "off"
-    IL_00e7:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_00e3:  nop
+    IL_00e4:  ldloc.2
+    IL_00e5:  ldstr      "off"
+    IL_00ea:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_00ec:  ldc.i4.0
-    IL_00ed:  ceq
-    IL_00ef:  stloc.3
-    IL_00f0:  ldloc.3
-    IL_00f1:  brtrue.s   IL_00fd
+    IL_00ef:  ldc.i4.0
+    IL_00f0:  ceq
+    IL_00f2:  stloc.3
+    IL_00f3:  ldloc.3
+    IL_00f4:  brtrue.s   IL_0100
 
-    IL_00f3:  nop
-    IL_00f4:  ldc.i4.0
-    IL_00f5:  stsfld     int32 gsPublic::Global_Disable_Track
-    IL_00fa:  nop
-    IL_00fb:  br.s       IL_0117
+    IL_00f6:  nop
+    IL_00f7:  ldc.i4.0
+    IL_00f8:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_00fd:  nop
+    IL_00fe:  br.s       IL_011a
 
-    IL_00fd:  ldloc.2
-    IL_00fe:  ldstr      "on"
-    IL_0103:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_0100:  ldloc.2
+    IL_0101:  ldstr      "on"
+    IL_0106:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_0108:  ldc.i4.0
-    IL_0109:  ceq
-    IL_010b:  stloc.3
-    IL_010c:  ldloc.3
-    IL_010d:  brtrue.s   IL_0117
+    IL_010b:  ldc.i4.0
+    IL_010c:  ceq
+    IL_010e:  stloc.3
+    IL_010f:  ldloc.3
+    IL_0110:  brtrue.s   IL_011a
 
-    IL_010f:  nop
-    IL_0110:  ldc.i4.1
-    IL_0111:  stsfld     int32 gsPublic::Global_Disable_Track
-    IL_0116:  nop
-    IL_0117:  ldstr      bytearray (EE 4F 39 65 10 62 9F 52 )                         // .O9e.b.R
-    IL_011c:  ldstr      "bhSecurity.aspx"
-    IL_0121:  call       void gsPublic::Alert(string,
+    IL_0112:  nop
+    IL_0113:  ldc.i4.1
+    IL_0114:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_0119:  nop
+    IL_011a:  nop
+    IL_011b:  ldstr      bytearray (EE 4F 39 65 10 62 9F 52 )                         // .O9e.b.R
+    IL_0120:  ldstr      "bhSecurity.aspx"
+    IL_0125:  call       void gsPublic::Alert(string,
                                               string)
-    IL_0126:  nop
-    IL_0127:  br.s       IL_0129
-
-    IL_0129:  ret
+    IL_012a:  nop
+    IL_012b:  nop
+    IL_012c:  ret
   } // end of method gsPublic::MangerOpt
 
   .method private hidebysig static void  Alert(string str,
@@ -1963,13 +2130,12 @@
 
   .method public hidebysig static void  test(class [mscorlib]System.IO.TextWriter textWriter) cil managed
   {
-    // 代码大小       9 (0x9)
+    // 代码大小       8 (0x8)
     .maxstack  8
     IL_0000:  nop
-    IL_0001:  ldarg.0
-    IL_0002:  call       void gsPublic::ChatpreLevel1(class [mscorlib]System.IO.TextWriter)
-    IL_0007:  nop
-    IL_0008:  ret
+    IL_0001:  call       void gsPublic::OnlineLevel()
+    IL_0006:  nop
+    IL_0007:  ret
   } // end of method j::test
 
   .method public hidebysig specialname rtspecialname 
@@ -2045,4 +2211,4 @@
 // =============================================================
 
 // *********** 反汇编完成 ***********************
-// 警告: 创建了 Win32 资源文件 E:\diskF\swtserver\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.res
+// 警告: 创建了 Win32 资源文件 E:\diskF\swtserver\greenShield-server\server\LRServer-test\LRServer-test\bin\Debug\LRServer-test.res
