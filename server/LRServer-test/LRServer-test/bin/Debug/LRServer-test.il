@@ -53,13 +53,13 @@
   .ver 1:0:0:0
 }
 .module 'LRServer-test.dll'
-// MVID: {9BA7F185-3FDE-48E9-B973-B8F5BC83D05B}
+// MVID: {A41B622B-07D8-44D6-A944-262516F07D12}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x01060000
+// Image base: 0x025B0000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -1489,7 +1489,7 @@
 
   .method public hidebysig static void  ManagerLogin() cil managed
   {
-    // 代码大小       411 (0x19b)
+    // 代码大小       418 (0x1a2)
     .maxstack  4
     .locals init ([0] string username,
              [1] string password,
@@ -1552,7 +1552,7 @@
     IL_0085:  call       void gsPublic::Alert(string,
                                               string)
     IL_008a:  nop
-    IL_008b:  br         IL_0199
+    IL_008b:  br         IL_01a0
 
     IL_0090:  ldloc.3
     IL_0091:  call       class bn aq::x(string)
@@ -1572,7 +1572,7 @@
     IL_00b1:  call       void gsPublic::Alert(string,
                                               string)
     IL_00b6:  nop
-    IL_00b7:  br         IL_0199
+    IL_00b7:  br         IL_01a0
 
     .try
     {
@@ -1608,7 +1608,7 @@
         IL_0100:  call       void gsPublic::Alert(string,
                                                   string)
         IL_0105:  nop
-        IL_0106:  leave      IL_0199
+        IL_0106:  leave      IL_01a0
 
         IL_010b:  ldloc.1
         IL_010c:  ldloc.3
@@ -1647,49 +1647,52 @@
         IL_0154:  ldloc.s    desEn
         IL_0156:  stsfld     string gsPublic::Global_VerifyCode
         IL_015b:  ldstr      bytearray (7B 76 55 5F 10 62 9F 52 )                         // {vU_.b.R
-        IL_0160:  ldstr      "bhSecurity.aspx"
-        IL_0165:  call       void gsPublic::Alert(string,
+        IL_0160:  ldstr      "bhSecurity.aspx\?vid="
+        IL_0165:  ldloc.s    desEn
+        IL_0167:  call       string [mscorlib]System.String::Concat(string,
+                                                                    string)
+        IL_016c:  call       void gsPublic::Alert(string,
                                                   string)
-        IL_016a:  nop
-        IL_016b:  leave.s    IL_0199
+        IL_0171:  nop
+        IL_0172:  leave.s    IL_01a0
 
       }  // end .try
       catch [mscorlib]System.Exception 
       {
-        IL_016d:  stloc.s    ex
-        IL_016f:  nop
-        IL_0170:  ldstr      "ManagerLogin: "
-        IL_0175:  ldloc.s    ex
-        IL_0177:  callvirt   instance string [mscorlib]System.Object::ToString()
-        IL_017c:  call       string [mscorlib]System.String::Concat(string,
+        IL_0174:  stloc.s    ex
+        IL_0176:  nop
+        IL_0177:  ldstr      "ManagerLogin: "
+        IL_017c:  ldloc.s    ex
+        IL_017e:  callvirt   instance string [mscorlib]System.Object::ToString()
+        IL_0183:  call       string [mscorlib]System.String::Concat(string,
                                                                     string)
-        IL_0181:  call       void e::b(string)
-        IL_0186:  nop
-        IL_0187:  nop
-        IL_0188:  leave.s    IL_018a
+        IL_0188:  call       void e::b(string)
+        IL_018d:  nop
+        IL_018e:  nop
+        IL_018f:  leave.s    IL_0191
 
       }  // end handler
-      IL_018a:  nop
-      IL_018b:  leave.s    IL_0198
+      IL_0191:  nop
+      IL_0192:  leave.s    IL_019f
 
     }  // end .try
     finally
     {
-      IL_018d:  nop
-      IL_018e:  ldloc.s    bn
-      IL_0190:  call       void [mscorlib]System.Threading.Monitor::Exit(object)
-      IL_0195:  nop
-      IL_0196:  nop
-      IL_0197:  endfinally
+      IL_0194:  nop
+      IL_0195:  ldloc.s    bn
+      IL_0197:  call       void [mscorlib]System.Threading.Monitor::Exit(object)
+      IL_019c:  nop
+      IL_019d:  nop
+      IL_019e:  endfinally
     }  // end handler
-    IL_0198:  nop
-    IL_0199:  nop
-    IL_019a:  ret
+    IL_019f:  nop
+    IL_01a0:  nop
+    IL_01a1:  ret
   } // end of method gsPublic::ManagerLogin
 
   .method public hidebysig static void  MangerOpt() cil managed
   {
-    // 代码大小       301 (0x12d)
+    // 代码大小       296 (0x128)
     .maxstack  2
     .locals init ([0] string vid,
              [1] string 'opt',
@@ -1698,143 +1701,142 @@
     IL_0000:  nop
     IL_0001:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
     IL_0006:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
-    IL_000b:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
-    IL_0010:  ldstr      "vid"
-    IL_0015:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
-    IL_001a:  stloc.0
-    IL_001b:  ldloc.0
-    IL_001c:  ldsfld     string gsPublic::Global_VerifyCode
-    IL_0021:  call       bool [mscorlib]System.String::op_Inequality(string,
+    IL_000b:  ldstr      "vid"
+    IL_0010:  callvirt   instance string [System.Web]System.Web.HttpRequest::get_Item(string)
+    IL_0015:  stloc.0
+    IL_0016:  ldloc.0
+    IL_0017:  ldsfld     string gsPublic::Global_VerifyCode
+    IL_001c:  call       bool [mscorlib]System.String::op_Inequality(string,
                                                                      string)
-    IL_0026:  ldc.i4.0
-    IL_0027:  ceq
-    IL_0029:  stloc.3
-    IL_002a:  ldloc.3
-    IL_002b:  brtrue.s   IL_003f
+    IL_0021:  ldc.i4.0
+    IL_0022:  ceq
+    IL_0024:  stloc.3
+    IL_0025:  ldloc.3
+    IL_0026:  brtrue.s   IL_003a
 
-    IL_002d:  nop
-    IL_002e:  ldstr      bytearray (F7 8B 48 51 7B 76 55 5F )                         // ..HQ{vU_
-    IL_0033:  ldstr      "login.html"
-    IL_0038:  call       void gsPublic::Alert(string,
+    IL_0028:  nop
+    IL_0029:  ldstr      bytearray (F7 8B 48 51 7B 76 55 5F )                         // ..HQ{vU_
+    IL_002e:  ldstr      "login.html"
+    IL_0033:  call       void gsPublic::Alert(string,
                                               string)
-    IL_003d:  nop
-    IL_003e:  nop
-    IL_003f:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
-    IL_0044:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
-    IL_0049:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
-    IL_004e:  ldstr      "opt"
-    IL_0053:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
-    IL_0058:  stloc.1
-    IL_0059:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
-    IL_005e:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
-    IL_0063:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
-    IL_0068:  ldstr      "track"
-    IL_006d:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
-    IL_0072:  stloc.2
-    IL_0073:  ldloc.1
-    IL_0074:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_0079:  brfalse.s  IL_0083
+    IL_0038:  nop
+    IL_0039:  nop
+    IL_003a:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_003f:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_0044:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0049:  ldstr      "opt"
+    IL_004e:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_0053:  stloc.1
+    IL_0054:  call       class [System.Web]System.Web.HttpContext [System.Web]System.Web.HttpContext::get_Current()
+    IL_0059:  callvirt   instance class [System.Web]System.Web.HttpRequest [System.Web]System.Web.HttpContext::get_Request()
+    IL_005e:  callvirt   instance class [System]System.Collections.Specialized.NameValueCollection [System.Web]System.Web.HttpRequest::get_Form()
+    IL_0063:  ldstr      "track"
+    IL_0068:  callvirt   instance string [System]System.Collections.Specialized.NameValueCollection::get_Item(string)
+    IL_006d:  stloc.2
+    IL_006e:  ldloc.1
+    IL_006f:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_0074:  brfalse.s  IL_007e
 
-    IL_007b:  ldloc.2
-    IL_007c:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_0081:  br.s       IL_0084
+    IL_0076:  ldloc.2
+    IL_0077:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_007c:  br.s       IL_007f
 
-    IL_0083:  ldc.i4.0
-    IL_0084:  nop
-    IL_0085:  stloc.3
-    IL_0086:  ldloc.3
-    IL_0087:  brtrue     IL_012c
+    IL_007e:  ldc.i4.0
+    IL_007f:  nop
+    IL_0080:  stloc.3
+    IL_0081:  ldloc.3
+    IL_0082:  brtrue     IL_0127
 
-    IL_008c:  nop
-    IL_008d:  ldloc.1
-    IL_008e:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_0093:  stloc.3
-    IL_0094:  ldloc.3
-    IL_0095:  brtrue.s   IL_00d9
+    IL_0087:  nop
+    IL_0088:  ldloc.1
+    IL_0089:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_008e:  stloc.3
+    IL_008f:  ldloc.3
+    IL_0090:  brtrue.s   IL_00d4
 
-    IL_0097:  nop
-    IL_0098:  ldloc.1
-    IL_0099:  ldstr      "level1"
-    IL_009e:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_0092:  nop
+    IL_0093:  ldloc.1
+    IL_0094:  ldstr      "level1"
+    IL_0099:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_00a3:  ldc.i4.0
-    IL_00a4:  ceq
-    IL_00a6:  stloc.3
-    IL_00a7:  ldloc.3
-    IL_00a8:  brtrue.s   IL_00b4
+    IL_009e:  ldc.i4.0
+    IL_009f:  ceq
+    IL_00a1:  stloc.3
+    IL_00a2:  ldloc.3
+    IL_00a3:  brtrue.s   IL_00af
 
-    IL_00aa:  nop
-    IL_00ab:  ldc.i4.1
-    IL_00ac:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_00b1:  nop
-    IL_00b2:  br.s       IL_00d8
+    IL_00a5:  nop
+    IL_00a6:  ldc.i4.1
+    IL_00a7:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00ac:  nop
+    IL_00ad:  br.s       IL_00d3
 
-    IL_00b4:  ldloc.1
-    IL_00b5:  ldstr      "level2"
-    IL_00ba:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_00af:  ldloc.1
+    IL_00b0:  ldstr      "level2"
+    IL_00b5:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_00bf:  ldc.i4.0
-    IL_00c0:  ceq
-    IL_00c2:  stloc.3
-    IL_00c3:  ldloc.3
-    IL_00c4:  brtrue.s   IL_00d0
+    IL_00ba:  ldc.i4.0
+    IL_00bb:  ceq
+    IL_00bd:  stloc.3
+    IL_00be:  ldloc.3
+    IL_00bf:  brtrue.s   IL_00cb
 
-    IL_00c6:  nop
-    IL_00c7:  ldc.i4.1
-    IL_00c8:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_00cd:  nop
-    IL_00ce:  br.s       IL_00d8
+    IL_00c1:  nop
+    IL_00c2:  ldc.i4.1
+    IL_00c3:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00c8:  nop
+    IL_00c9:  br.s       IL_00d3
 
-    IL_00d0:  nop
-    IL_00d1:  ldc.i4.0
-    IL_00d2:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
-    IL_00d7:  nop
-    IL_00d8:  nop
-    IL_00d9:  ldloc.2
-    IL_00da:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
-    IL_00df:  stloc.3
-    IL_00e0:  ldloc.3
-    IL_00e1:  brtrue.s   IL_011b
+    IL_00cb:  nop
+    IL_00cc:  ldc.i4.0
+    IL_00cd:  stsfld     int32 gsPublic::Global_Guard_verifyUsr_ON
+    IL_00d2:  nop
+    IL_00d3:  nop
+    IL_00d4:  ldloc.2
+    IL_00d5:  call       bool [mscorlib]System.String::IsNullOrEmpty(string)
+    IL_00da:  stloc.3
+    IL_00db:  ldloc.3
+    IL_00dc:  brtrue.s   IL_0116
 
-    IL_00e3:  nop
-    IL_00e4:  ldloc.2
-    IL_00e5:  ldstr      "off"
-    IL_00ea:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_00de:  nop
+    IL_00df:  ldloc.2
+    IL_00e0:  ldstr      "off"
+    IL_00e5:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_00ef:  ldc.i4.0
-    IL_00f0:  ceq
-    IL_00f2:  stloc.3
-    IL_00f3:  ldloc.3
-    IL_00f4:  brtrue.s   IL_0100
+    IL_00ea:  ldc.i4.0
+    IL_00eb:  ceq
+    IL_00ed:  stloc.3
+    IL_00ee:  ldloc.3
+    IL_00ef:  brtrue.s   IL_00fb
 
-    IL_00f6:  nop
-    IL_00f7:  ldc.i4.0
-    IL_00f8:  stsfld     int32 gsPublic::Global_Disable_Track
-    IL_00fd:  nop
-    IL_00fe:  br.s       IL_011a
+    IL_00f1:  nop
+    IL_00f2:  ldc.i4.0
+    IL_00f3:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_00f8:  nop
+    IL_00f9:  br.s       IL_0115
 
-    IL_0100:  ldloc.2
-    IL_0101:  ldstr      "on"
-    IL_0106:  call       bool [mscorlib]System.String::op_Equality(string,
+    IL_00fb:  ldloc.2
+    IL_00fc:  ldstr      "on"
+    IL_0101:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                    string)
-    IL_010b:  ldc.i4.0
-    IL_010c:  ceq
-    IL_010e:  stloc.3
-    IL_010f:  ldloc.3
-    IL_0110:  brtrue.s   IL_011a
+    IL_0106:  ldc.i4.0
+    IL_0107:  ceq
+    IL_0109:  stloc.3
+    IL_010a:  ldloc.3
+    IL_010b:  brtrue.s   IL_0115
 
-    IL_0112:  nop
-    IL_0113:  ldc.i4.1
-    IL_0114:  stsfld     int32 gsPublic::Global_Disable_Track
-    IL_0119:  nop
-    IL_011a:  nop
-    IL_011b:  ldstr      bytearray (EE 4F 39 65 10 62 9F 52 )                         // .O9e.b.R
-    IL_0120:  ldstr      "bhSecurity.aspx"
-    IL_0125:  call       void gsPublic::Alert(string,
+    IL_010d:  nop
+    IL_010e:  ldc.i4.1
+    IL_010f:  stsfld     int32 gsPublic::Global_Disable_Track
+    IL_0114:  nop
+    IL_0115:  nop
+    IL_0116:  ldstr      bytearray (EE 4F 39 65 10 62 9F 52 )                         // .O9e.b.R
+    IL_011b:  ldstr      "bhSecurity.aspx"
+    IL_0120:  call       void gsPublic::Alert(string,
                                               string)
-    IL_012a:  nop
-    IL_012b:  nop
-    IL_012c:  ret
+    IL_0125:  nop
+    IL_0126:  nop
+    IL_0127:  ret
   } // end of method gsPublic::MangerOpt
 
   .method private hidebysig static void  Alert(string str,
@@ -2206,6 +2208,68 @@
   } // end of method DelSiteID::.ctor
 
 } // end of class LiveWeb.OC.DelSiteID
+
+.class private auto ansi beforefieldinit LRServer_test.test
+       extends [mscorlib]System.Object
+{
+  .class auto ansi sealed nested public GEnum0
+         extends [mscorlib]System.Enum
+  {
+    .field public specialname rtspecialname int64 value__
+    .field public static literal valuetype LRServer_test.test/GEnum0 All = int64(0x7FFFFFFFFF)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_0 = int64(0x0)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_1 = int64(0x1)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_10 = int64(0x200)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_11 = int64(0x400)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_12 = int64(0x800)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_13 = int64(0x1000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_14 = int64(0x2000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_15 = int64(0x4000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_16 = int64(0x8000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_17 = int64(0x10000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_18 = int64(0x20000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_19 = int64(0x40000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_2 = int64(0x2)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_20 = int64(0x80000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_21 = int64(0x100000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_22 = int64(0x200000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_23 = int64(0x400000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_24 = int64(0x800000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_25 = int64(0x1000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_26 = int64(0x2000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_27 = int64(0x4000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_28 = int64(0x8000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_29 = int64(0x10000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_3 = int64(0x4)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_30 = int64(0x20000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_31 = int64(0x40000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_32 = int64(0x80000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_33 = int64(0x100000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_34 = int64(0x200000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_35 = int64(0x400000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_36 = int64(0x800000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_37 = int64(0x1000000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_38 = int64(0x2000000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_39 = int64(0x4000000000)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_4 = int64(0x8)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_5 = int64(0x10)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_6 = int64(0x20)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_7 = int64(0x40)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_8 = int64(0x80)
+    .field public static literal valuetype LRServer_test.test/GEnum0 const_9 = int64(0x100)
+  } // end of class GEnum0
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // 代码大小       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method test::.ctor
+
+} // end of class LRServer_test.test
 
 
 // =============================================================

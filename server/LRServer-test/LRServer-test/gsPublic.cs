@@ -131,7 +131,7 @@ using System.Web;
                     Alert("管理名称或者密码不正确2","login.html");
                 }
                 gsPublic.Global_VerifyCode = desEn;
-                Alert("登录成功","bhSecurity.aspx");
+                Alert("登录成功", "bhSecurity.aspx?vid=" + desEn);
                 return;
             }
             catch (Exception ex)
@@ -148,7 +148,7 @@ using System.Web;
         /// </summary>
         public static void MangerOpt()
         {
-            string vid = HttpContext.Current.Request.Form["vid"];
+            string vid = HttpContext.Current.Request["vid"];
             if (vid != gsPublic.Global_VerifyCode)
             {
                 Alert("请先登录", "login.html");
@@ -184,7 +184,7 @@ using System.Web;
                         gsPublic.Global_Disable_Track = 1;
                     }
                 }
-                Alert("修改成功", "bhSecurity.aspx");
+                Alert("修改成功", "bhSecurity.aspx?vid=" + gsPublic.Global_VerifyCode);
             }
  
         }
